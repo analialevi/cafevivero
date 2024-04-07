@@ -1,209 +1,217 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital@1&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    text-align: center;}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  text-align: center;
+}
 
-body{
-        height: 100vh;
-        width: 100%;
-        
-    }
-    
-.fondo{
-        background:linear-gradient(to right,rgba(0, 0, 0, 0.642),rgba(0, 0, 0, 0.642)),  url("../assets/imagenes/cafeback.jpg");
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative}
-.borroso{
-        backdrop-filter: blur(5px);/*efecto de esmerilado sobre un div, queda el efecto sobre la imagen de fondo*/
-        height:100%;
-        z-index: 2;
-    }
-.colorNav{
-        background-color: #47806159;
-    }
-    .nav-link{
-        font-size: 1.2rem;
-    }
+body {
+  height: 100vh;
+  width: 100%;
+}
 
-    .navbar-nav {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-.galeria{
-        width: 100%;
-    }
+.fondo {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.642),
+      rgba(0, 0, 0, 0.642)
+    ),
+    url("../assets/imagenes/cafeback.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.borroso {
+  backdrop-filter: blur(
+    5px
+  ); /*efecto de esmerilado sobre un div, queda el efecto sobre la imagen de fondo*/
+  height: 100%;
+  z-index: 2;
+}
+.colorNav {
+  background-color: #47806159;
+}
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.galeria {
+  width: 100%;
+}
 header {
-    background-color: #354f52a1; 
+  background-color: #354f52a1;
 }
 
+h1 {
+  color: rgb(135, 199, 162);
+}
+h2 {
+  color: white;
+  font-size: 20px;
+}
+.card {
+  color: #fff3f3bb;
+  background-color: #52796f42;
+}
 
-h1{
-    color: rgb(135, 199, 162);
-}
-h2{
-    color: white;
-    font-size: 20px;
-}
-.card{
-    color: #fff3f3bb;
-    background-color: #52796f42;
-}
-
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
 .carousel-inner {
-    height: 100%;
+  height: 100%;
 }
 #carouselExampleIndicators {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 .carousel-inner img {
-    width: auto;
-    height: 80vh;
-    object-fit: cover;
+  width: auto;
+  height: 80vh;
+  object-fit: cover;
 }
-footer{
-    background-color: #52796f;
+footer {
+  background-color: #52796f;
 }
-.linkNavFooter{
-text-decoration: none;
-color: white;
+.linkNavFooter {
+  text-decoration: none;
+  color: white;
 }
 /*estilado pagina de contacto*/
-.contenedorMain{
-    position:relative;
+.contenedorMain {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.642),
+      rgba(0, 0, 0, 0.642)
+    ),
+    url("../assets/imagenes/pexels-zumrad-normatova-11875719.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #366855bd;
+  box-shadow: 0px 0px 19px 5px rgba(119, 138, 33, 0.19);
+}
+.left {
+  background: url("../assets/imagenes/pexels-ketut-subiyanto-4350205.jpg")
+    no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+.right {
+  padding: 25px 40px;
+}
+h2 {
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #52796f;
+}
+.field {
+  width: 100%;
+  border: 2px solid #183d288f;
+  outline: none;
+  background-color: #fdffff;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: all 0.3s ease-in-out;
+}
+.field:hover {
+  background-color: rgba(115, 238, 181, 0.527);
+}
+textarea {
+  min-height: 150px;
+}
+.btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #4bcc616c;
+  color: #0a0a0a;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: #42724a;
+}
+.field:focus {
+  border: 2px solid #078627;
+  background-color: #447063;
+}
+@media screen and (max-width: 768px) {
+  .galeria {
     width: 100%;
-    height: 100%;
-    display:flex;   
-    justify-content: center;
+    height: 80vh;
+    display: flex;
     align-items: center;
-    margin-top:2rem;
-    margin-bottom: 2rem; 
-    background:linear-gradient(to right,rgba(0, 0, 0, 0.642),rgba(0, 0, 0, 0.642)),  url("../assets/imagenes/pexels-zumrad-normatova-11875719.jpg");
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative
-}
-
-.contact-box{
-    max-width: 850px;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items:center;
-    text-align: center;
-    background-color: #366855bd;
-    box-shadow: 0px 0px 19px 5px rgba(119, 138, 33, 0.19);
-
-}
-.left{
-    background: url("../assets/imagenes/pexels-ketut-subiyanto-4350205.jpg") no-repeat center;
+  }
+  .icon {
+    font-size: 1.5rem;
+  }
+  .piePagina {
+    height: 3rem;
+  }
+  /* pagina contacto*/
+  .contenedorMain {
+    padding: 20px;
+  }
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
     background-size: cover;
     height: 100%;
-}
-.right{
-    padding: 25px 40px;
-}
-h2{
-    position: relative;
-    padding: 0 0 10px;
-    margin-bottom: 10px;
-}
-h2::after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color:#52796f ;
-
-}
-.field{
-    width: 100%;
-    border: 2px solid #183d288f;
-    outline:none;
-    background-color: #fdffff;
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem;
-    margin-bottom: 22px;
-    transition: all 0.3s ease-in-out;
-}
-.field:hover{
-    background-color: rgba(115, 238, 181, 0.527);
-
-}
-textarea{
-    min-height: 150px;
-}
-.btn{
-    width: 100%;
-    padding: 0.5rem 1rem;
-    background-color: #4bcc616c ;
-    color: #0a0a0a;
-    font-size: 1.1rem;
-    border: none;
-    outline:none;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-.btn:hover{
-    background-color:#42724a ;
-}
-.field:focus{
-    border: 2px solid #078627 ;
-    background-color: #447063;
-}
-@media screen and (max-width: 768px){
-    .galeria{
-        width: 100%;
-        height:80vh;
-        display: flex;
-        align-items: center;
-    } 
-    .icon{
-        font-size: 1.5rem;
-    }
-    .piePagina{
-        height: 3rem;
-    }
-    /* pagina contacto*/
-    .contenedorMain{
-       padding: 20px;  
-    }
-     
-    .contact-box{
-        grid-template-columns: 1fr;
-    }
-    .left{
-        background-size: cover;
-        height: 100%;
-    }
-    .right{
-        padding: 25px 20px;
-    }
+  }
+  .right {
+    padding: 25px 20px;
+  }
 }
 /*estilado pagina servicios*/
-.fondo-dos{
-    background-image: url(../assets/imagenes/pexels-sasha-kim-9414272.jpg);
+.fondo-dos {
+  background-image: url(../assets/imagenes/pexels-sasha-kim-9414272.jpg);
 }
 .servicio-img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
