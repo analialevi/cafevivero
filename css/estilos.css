@@ -52,7 +52,34 @@ body {
 header {
   background-color: #354f52a1;
 }
+/* Animación para el efecto de aparición de las letras */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
+/* Estilos para el título h1 */
+h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 4s steps(30, end) infinite;
+}
+
+/* Estilos para el cursor del título */
+h1::after {
+  content: "|";
+  animation: blink-caret .4s step-end infinite;
+}
+
+/* Cursor animado */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
 h1 {
   color: rgb(135, 199, 162);
 }
@@ -86,6 +113,10 @@ footer {
 .linkNavFooter {
   text-decoration: none;
   color: white;
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease; /* Agrega transición para suavizar el efecto */
+  
 }
 /*estilado pagina de contacto*/
 .contenedorMain {
@@ -214,4 +245,22 @@ textarea {
 .servicio-img {
   max-width: 100%;
   height: auto;
+}
+.linkNavFooter {
+  display: inline-block;
+  margin: 0 10px; /* Espacio entre los iconos */
+  animation: float 4s infinite; /* Agregamos la animación */
+}
+
+/* La animación para hacer que los iconos floten */
+@keyframes float {
+  0% {
+    transform: translateY(0); /* No se mueve en el eje Y */
+  }
+  50% {
+    transform: translateY(-5px); /* Se eleva ligeramente */
+  }
+  100% {
+    transform: translateY(0); /* Vuelve a la posición inicial */
+  }
 }
