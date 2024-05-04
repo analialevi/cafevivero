@@ -265,3 +265,40 @@ textarea {
   }
 }
 
+.menu-cafeteria {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.menu-cafeteria-columna {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+h2 {
+  margin-bottom: 10px;
+  color: #0a0a0a;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 5px;
+}
+.col-md-6 a{ 
+    text-decoration: none;
+    color: inherit; 
+}
+.col-md-6 a:hover {
+  color: #42724a;
+}
+.boton-regreso {
+  text-decoration: none; 
+  color: inherit; 
+}
+.boton-regreso a:hover{
+  color: #42724a;
+}
