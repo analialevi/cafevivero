@@ -9,6 +9,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/estilos.css" />
+    <style>
+        .servicio-img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .contenido h3,
+        .contenido h4,
+        .contenido p {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 
 <body class="container-fluid fondo-dos">
@@ -16,16 +29,17 @@
         <div class="borroso"></div>
         <nav class="navbar slide navbar-expand-lg navbar-light colorNav text-white">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="../assets/imagenes/logo.jpg" alt="logo" width="60" height="48" />
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/imagenes/WhatsApp Image 2024-04-30 at 11.48.24.jpeg" alt="logo cafe" width="60"
+                        height="48">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav justify-content-between">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav justifi-content-between">
                         <li class="nav-item">
                             <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
                         </li>
@@ -33,7 +47,7 @@
                             <a class="nav-link text-white" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href=".#">Servicios</a>
+                            <a class="nav-link text-white" href="./servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="./curiosidades.html">Curiosidades</a>
@@ -46,59 +60,46 @@
             </div>
         </nav>
     </header>
-    <main class="container">
+    <main class="container" class="main">
         <h1>Nuestros Servicios</h1>
         <h2>Elija entre las siguientes opciones:</h2>
+
         <div class="row">
             <div class="col-lg-4">
                 <div class="servicio">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="../assets/imagenes/7.jpg" alt="Cafetería y Brunch"
-                                class="img-fluid servicio-img" />
-                        </div>
-                        <div class="col-md-6">
-                            <h3>Cafetería y Brunch</h3>
-                            <p>
-                                En GREEN Brunch contamos con un amplio menu de desayunos, brunchs y meriendas. Además incluimos menu apto celiacos y veganos para que todos puedan disfrutar de este rincon verde en la ciudad. 
-                            </p>
-                        </div>
+                    <img src="../assets/imagenes/7.jpg" alt="Cafetería y Brunch" class="img-fluid servicio-img" />
+                    <div class="contenido">
+                        <h3>Cafetería y Brunch</h3>
+                        <p>En GREEN Brunch contamos con un amplio menú de desayunos, brunchs y meriendas. Además, incluimos menú
+                            apto para celiacos y veganos para que todos puedan disfrutar de este rincón verde en la ciudad.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="servicio">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="../assets/imagenes/pexels-trve-creative-lab-13793210.jpg" alt="Vivero"
-                                class="img-fluid servicio-img" />
-                        </div>
-                        <div class="col-md-6">
-                            <h3>Vivero</h3>
-                            <h4>Plantas de interior y exterior</h4>
-                            <p>
-                                En GREEN Brunch vas a poder disfrutar de exquisitos platos y cafes rodeado de verde, para poder descansar un poco del ruido de la ciudad. La idea fue crear un espacio tranquilo y de consciencia sobre la importancia de los espacios verdes. 
-                            </p>
-                        </div>
+                    <img src="../assets/imagenes/pexels-trve-creative-lab-13793210.jpg" alt="Vivero"
+                        class="img-fluid servicio-img" />
+                    <div class="contenido">
+                        <h3>Vivero</h3>
+                        <h4>Plantas de interior y exterior</h4>
+                        <p>En GREEN Brunch vas a poder disfrutar de exquisitos platos y cafés rodeado de verde, para poder
+                            descansar un poco del ruido de la ciudad. La idea fue crear un espacio tranquilo y de conciencia
+                            sobre la importancia de los espacios verdes.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="servicio">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="../assets/imagenes/back.jpg" alt="Giftcard" class="img-fluid servicio-img" />
-                        </div>
-                        <div class="col-md-6">
-                            <h3>Giftcard (Valido para merienda)</h3>
-                            <p>
-                                ¿No sabes que regalarle a esa persona especial? Que mejor que una merienda donde puede disfrutar de cafe y cosas ricas en un espacio tranquilo. 
-                            </p>
-                        </div>
+                    <img src="../assets/imagenes/back.jpg" alt="Giftcard" class="img-fluid servicio-img" />
+                    <div class="contenido">
+                        <h3>Giftcard (Válido para merienda)</h3>
+                        <p>¿No sabes qué regalarle a esa persona especial? Qué mejor que una merienda donde pueda disfrutar de
+                            café y cosas ricas en un espacio tranquilo.</p>
                     </div>
                 </div>
             </div>
         </div>
+
     </main>
 
     <footer>

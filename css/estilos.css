@@ -39,7 +39,10 @@ body {
 }
 .nav-link {
   font-size: 1.2rem;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
+
+
 
 .navbar-nav {
   width: 100%;
@@ -109,13 +112,18 @@ img {
 }
 footer {
   background-color: #52796f;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
 }
+
+
 .linkNavFooter {
   text-decoration: none;
   color: white;
   display: inline-block;
   margin: 0 10px;
-  transition: transform 0.3s ease; /* Agrega transición para suavizar el efecto */
+  transition: transform 0.3s ease; 
   
 }
 /*estilado pagina de contacto*/
@@ -139,6 +147,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  padding: 20px;
 }
 
 .contact-box {
@@ -225,7 +234,7 @@ textarea {
   }
   /* pagina contacto*/
   .contenedorMain {
-    padding: 20px;
+   
   }
   .contact-box {
     grid-template-columns: 1fr;
@@ -240,12 +249,26 @@ textarea {
 }
 /*estilado pagina servicios*/
 .fondo-dos {
-  background-image: url(../assets/imagenes/pexels-sasha-kim-9414272.jpg);
+  background-image: url(../assets/imagenes/Cafebacke.jpg);
+  background-size: cover;
 }
 .servicio-img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+
 }
+.contenido h3,
+.contenido h4,
+.contenido p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+.contenido{
+    padding: 20px;    
+}
+
 .linkNavFooter {
   display: inline-block;
   margin: 0 10px; /* Espacio entre los iconos */
@@ -264,3 +287,56 @@ textarea {
     transform: translateY(0); /* Vuelve a la posición inicial */
   }
 }
+/* Estilos para el texto en todas las secciones */
+
+.section {
+  color: white; /* Cambiar el color del texto a blanco */
+}
+
+/* Estilos para los títulos */
+
+.section h2 {
+  color: white; /* Cambiar el color del título a blanco */
+  font-size: 28px; /* Tamaño de fuente */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+  text-align: center; /* Alinear el texto al centro */
+}
+
+/* Estilos para el texto en los párrafos */
+.section p {
+  color: white; /* Cambiar el color del texto a blanco */
+  font-size: 24px; /* Tamaño de fuente */
+  text-align: justify; /* Alinear el texto justificado */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+/* Estilos para el título h5 */
+.card-title {
+  color: white; /* Cambiar el color del texto a blanco */
+  font-size: 28px; /* Tamaño de la fuente */
+  text-align: center; /* Alinear el texto al centro */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+/* Estilos para el párrafo */
+.card-text {
+  color: white; 
+  font-size: 24px; 
+  text-align: justify;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+}
+.main {
+  margin-bottom: 50px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-lg-4 {
+  flex-basis: calc(33.33% - 10px); /* Ajusta según sea necesario para dejar espacio entre las columnas */
+  margin-bottom: 20px; /* Espaciado entre las filas */
+}
+
+
