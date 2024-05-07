@@ -87,14 +87,14 @@ h2 {
   color: white;
   font-size: 20px;
 }
+
+/* Seccion nosotros */
 .card {
   color: #fff3f3bb;
   background-color: #52796f42;
 }
 
-img {
-  width: 100%;
-}
+
 .carousel-inner {
   height: 100%;
 }
