@@ -71,7 +71,6 @@ h1 {
 
 /* Estilos para el cursor del título */
 h1::after {
-  content: "|";
   animation: blink-caret .4s step-end infinite;
 }
 
@@ -83,7 +82,7 @@ h1::after {
 h1 {
   color: rgb(135, 199, 162);
 }
-h2 {
+.Colortitle {
   color: white;
   font-size: 20px;
 }
@@ -114,7 +113,7 @@ footer {
   text-decoration: none;
   color: white;
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 20px;
   transition: transform 0.3s ease; /* Agrega transición para suavizar el efecto */
   
 }
@@ -238,6 +237,25 @@ textarea {
     padding: 25px 20px;
   }
 }
+/*estilado pagina curiosidades*/
+main.row {
+  display: flex;
+}
+
+main .col-lg-6 {
+  padding: 20px;
+  flex: 1; /* Ajusta el tamaño de las columnas */
+}
+.imagen-cafe {
+  width: 100%; /* Porcentaje del ancho del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  max-width: 500px; 
+  max-height: 600px;
+}
+.text-green {
+  color: #508d50;
+}
+
 /*estilado pagina servicios*/
 .fondo-dos {
   background-image: url(../assets/imagenes/pexels-sasha-kim-9414272.jpg);
@@ -247,9 +265,10 @@ textarea {
   height: auto;
 }
 .linkNavFooter {
-  display: inline-block;
+  width: 20px;
+  height: auto;
   margin: 0 10px; /* Espacio entre los iconos */
-  animation: float 4s infinite; /* Agregamos la animación */
+  animation: float 3s infinite; /* Agregamos la animación */
 }
 
 /* La animación para hacer que los iconos floten */
@@ -302,3 +321,9 @@ li {
 .boton-regreso a:hover{
   color: #42724a;
 }
+.imagen-cafe {
+@media (max-width: 768px) {
+  main .col-lg-6 {
+        width: 100%;
+      }}
+    }
