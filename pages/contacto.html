@@ -43,19 +43,25 @@
         </div>
         </nav>
     </header>
-    <main class="container contenedorMain principal">   
+    <main class="container contenedorMain principal">
         <div class="contact-box">
             <div class="left"></div>
             <div class="right">
-                <h2>Dejanos tu consulta:</h2>
+                <h2 class="titulo-form">Dejanos tu consulta:</h2>
                 <form id="contactForm" action="" method="post">
                     <input type="text" name="name" id="name" class="field" placeholder="Nombre" required>
+                    <input type="text" name="lastname" id="lastname" class="field" placeholder="Apellido" required>
                     <input type="email" name="email" id="email" class="field" placeholder="Email" required>
                     <input type="tel" name="subject" id="subject" class="field" placeholder="Celular" required>
+                    <select id="reason" name="reason" required>
+                        <option value="" disabled selected>Selecciona un motivo</option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Reclamo">Reclamo</option>
+                        <option value="Sugerencia">Sugerencia</option>
+                    </select>
                     <textarea name="message" id="message" class="field" placeholder="Mensaje" required></textarea>
                     <div id="emailHelp" class="form-text text-white">No guardaremos su mail para spam.</div>
-                    <input type="submit" value="Enviar" class="btn"> 
-                    
+                    <input type="submit" value="Enviar" class="btn">
                 </form>
 
         </div>
@@ -63,15 +69,15 @@
 <footer>
     <div>
         <a class="linkNavFooter" href="https://www.instagram.com/" target="_blank">
-            <img src="../assets/imagenes/instagram.svg" alt="Instagram"> 
-            <i class="bi bi-instagram"></i> 
+            <img src="../assets/imagenes/instagram.svg" alt="Instagram" class="iconos-redes">
+            <i class="bi bi-instagram"></i>
         </a>
         <a class="linkNavFooter" href="https://web.whatsapp.com/" target="_blank">
-            <img src="../assets/imagenes/whatsapp.svg" alt="WhatsApp"> 
+            <img src="../assets/imagenes/whatsapp.svg" alt="WhatsApp" class="iconos-redes"> 
             <i class="bi bi-whatsapp"></i> 
         </a>
         <a class="linkNavFooter" href="https://www.facebook.com/" target="_blank">
-            <img src="../assets/imagenes/facebook.svg" alt="Facebook"> 
+            <img src="../assets/imagenes/facebook.svg" alt="Facebook" class="iconos-redes"> 
             <i class="bi bi-facebook"></i> 
         </a>
     </div>
