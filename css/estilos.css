@@ -213,6 +213,7 @@ h2::after {
 }
 textarea {
   min-height: 150px;
+  resize: none;
 }
 .btn {
   width: 100%;
