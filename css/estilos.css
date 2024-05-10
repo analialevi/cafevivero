@@ -215,6 +215,20 @@ textarea {
   border: 2px solid #078627;
 
 }
+.iconos-redes {
+  width: 25px;
+  height: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#reason {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+
 @media screen and (max-width: 768px) {
   .galeria {
     width: 100%;
