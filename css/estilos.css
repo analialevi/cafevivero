@@ -108,6 +108,9 @@ h1 {
 }
 footer {
   background-color: #52796f;
+  height: 100px;
+  margin-top: 50px;
+
 }
 .linkNavFooter {
   text-decoration: none;
@@ -115,9 +118,8 @@ footer {
   display: inline-block;
   margin: 0 20px;
   transition: transform 0.3s ease; /* Agrega transición para suavizar el efecto */
-  
-}
 
+}
 /*estilado pagina de contacto*/
 .contenedorMain {
   position: relative;
@@ -186,11 +188,14 @@ h2::after {
   margin-bottom: 22px;
   transition: all 0.3s ease-in-out;
 }
-.field:hover {
-  background-color: rgba(115, 238, 181, 0.527);
+
+#emailHelp{
+  margin-bottom: 10px;
 }
+
 textarea {
   min-height: 150px;
+  resize: none;
 }
 .btn {
   width: 100%;
@@ -208,7 +213,7 @@ textarea {
 }
 .field:focus {
   border: 2px solid #078627;
-  background-color: #447063;
+
 }
 @media screen and (max-width: 768px) {
   .galeria {
