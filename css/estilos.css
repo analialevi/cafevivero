@@ -284,8 +284,7 @@ main .col-lg-6 {
 
 /*estilado pagina servicios*/
 .fondo-dos {
-  background-image: url(../assets/imagenes/Cafebacke.jpg);
-  background-size: cover;
+  background-color: #0b1b0eb7;
 }
 .servicio-img {
   max-width: 100%;
