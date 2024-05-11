@@ -29,8 +29,7 @@ body {
 }
 .borroso {
   backdrop-filter: blur(
-    5px
-  ); /*efecto de esmerilado sobre un div, queda el efecto sobre la imagen de fondo*/
+    5px); /*efecto de esmerilado sobre un div, queda el efecto sobre la imagen de fondo*/
   height: 100%;
   z-index: 2;
 }
@@ -41,8 +40,6 @@ body {
   font-size: 1.2rem;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
-
-
 
 .navbar-nav {
   width: 100%;
@@ -96,7 +93,6 @@ h1 {
   background-color: #52796f42;
 }
 
-
 .carousel-inner {
   height: 100%;
 }
@@ -111,15 +107,9 @@ h1 {
 }
 footer {
   background-color: #52796f;
-<<<<<<< HEAD
   width: 100%;
   padding: 10px 0;
   text-align: center;
-=======
-  height: 100px;
-  margin-top: 50px;
-
->>>>>>> 63b77fff9997a052c1a8d199cef27b1e65940813
 }
 
 
@@ -127,18 +117,14 @@ footer {
   text-decoration: none;
   color: white;
   display: inline-block;
-<<<<<<< HEAD
   margin: 0 10px;
-  transition: transform 0.3s ease; 
-  
-=======
-  margin: 0 20px;
-  transition: transform 0.3s ease; /* Agrega transición para suavizar el efecto */
+  transition: transform 0.3s ease;
 
->>>>>>> 63b77fff9997a052c1a8d199cef27b1e65940813
 }
+
+
 /*estilado pagina de contacto*/
-.contenedorMain {
+.container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -246,6 +232,7 @@ textarea {
   margin-bottom: 20px;
 }
 
+/* Termina estilos de contacto */
 
 @media screen and (max-width: 768px) {
   .galeria {
@@ -261,9 +248,7 @@ textarea {
     height: 3rem;
   }
   /* pagina contacto*/
-  .contenedorMain {
-   
-  }
+
   .contact-box {
     grid-template-columns: 1fr;
   }
@@ -287,7 +272,7 @@ main .col-lg-6 {
 .imagen-cafe {
   width: 100%; /* Porcentaje del ancho del contenedor */
   height: auto; /* Altura automática para mantener la proporción */
-  max-width: 500px; 
+  max-width: 500px;
   max-height: 600px;
 }
 .text-green {
@@ -296,7 +281,6 @@ main .col-lg-6 {
 
 /*estilado pagina servicios*/
 .fondo-dos {
-<<<<<<< HEAD
   background-image: url(../assets/imagenes/Cafebacke.jpg);
   background-size: cover;
 }
@@ -306,20 +290,8 @@ main .col-lg-6 {
   border-radius: 10px; 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 
-=======
-  background-color: #041303ab;
 }
-.servicio-img-rounded {
-  border-radius: 50%;
-  object-fit: cover;
-  width: 200px;
-  height: 200px;
-}
-.fondo-verde{
-  background-color: #0b2b0b94;
->>>>>>> 63b77fff9997a052c1a8d199cef27b1e65940813
-}
-.contenido h3,
+/* .contenido h3,
 .contenido h4,
 .contenido p {
     color: white;
@@ -327,7 +299,7 @@ main .col-lg-6 {
 }
 .contenido{
     padding: 20px;    
-}
+} */
 
 .linkNavFooter {
   width: 20px;
@@ -349,11 +321,7 @@ main .col-lg-6 {
     transform: translateY(0); /* Vuelve a la posición inicial */
   }
 }
-<<<<<<< HEAD
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 /* Estilos para el texto en todas las secciones */
 
 .section {
@@ -406,10 +374,7 @@ main .col-lg-6 {
   margin-bottom: 20px; /* Espaciado entre las filas */
 }
 
-=======
->>>>>>> main
->>>>>>> Manuel
-=======
+
 .menu-cafeteria {
   display: flex;
   justify-content: space-between;
@@ -448,9 +413,10 @@ li {
   color: #42724a;
 }
 .imagen-cafe {
-@media (max-width: 768px) {
-  main .col-lg-6 {
-        width: 100%;
-      }}
+  @media (max-width: 768px) {
+    main .col-lg-6 {
+      width: 100%;
     }
->>>>>>> 63b77fff9997a052c1a8d199cef27b1e65940813
+  }
+}
+
