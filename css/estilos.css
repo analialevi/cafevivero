@@ -13,7 +13,11 @@ body {
   height: 100vh;
   width: 100%;
 }
-
+.bordeiconocafe{
+  border-radius: 50%;
+  width:60px;
+  height:60px;
+}
 .fondo {
   background: linear-gradient(
       to right,
@@ -143,7 +147,6 @@ footer {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
   padding: 20px;
 }
 
@@ -308,6 +311,123 @@ main .col-lg-6 {
   animation: float 3s infinite; /* Agregamos la animación */
 }
 
+/*menu de cafeteria del servicio*/
+.h3-servicios{
+  color: #fffefe;
+  margin-top: 10px;
+}
+.contenedor-servicios {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 300px;
+}
+.menu-cafeteria {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.menu-cafeteria-columna {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+h2 {
+  margin-bottom: 10px;
+  color: #0a0a0a;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 5px;
+}
+
+.boton-regreso {
+  text-decoration: none; 
+  color:inherit;
+}
+.flip-card-back a{
+  text-decoration: none; 
+  color:#bbb
+}
+.flip-card-back a:hover {
+  color: #42724a;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color:#ccc;
+  font-size: large;
+}
+
+/*probando imagen con giro*/
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Agrega una perspectiva para la transformación 3D */
+  margin: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* Rota la tarjeta al poner el cursor sobre ella */
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta la parte trasera */
+}
+
+.flip-card-front {
+  background-color: #bbb; /* Color de fondo de la cara frontal */
+}
+
+.flip-card-back {
+  background-color:#52796f; /* Color de fondo de la cara trasera */
+  color: white;
+  transform: rotateY(180deg); /* Inicia girada hacia atrás */
+  padding: 20px;
+}
+.flip-card-back p{
+  font-size: small;
+}
+
+.flip-card img {
+  width: 100%;
+  height: 100%;
+}
 
 /* La animación para hacer que los iconos floten */
 @keyframes float {
