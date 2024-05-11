@@ -272,7 +272,7 @@ main .col-lg-6 {
 .imagen-cafe {
   width: 100%; /* Porcentaje del ancho del contenedor */
   height: auto; /* Altura automática para mantener la proporción */
-  max-width: 500px;
+  max-width: 500px; 
   max-height: 600px;
 }
 .text-green {
@@ -291,7 +291,7 @@ main .col-lg-6 {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 
 }
-/* .contenido h3,
+.contenido h3,
 .contenido h4,
 .contenido p {
     color: white;
@@ -299,7 +299,7 @@ main .col-lg-6 {
 }
 .contenido{
     padding: 20px;    
-} */
+}
 
 .linkNavFooter {
   width: 20px;
