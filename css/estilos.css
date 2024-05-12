@@ -18,6 +18,7 @@ body {
   width:60px;
   height:60px;
 }
+
 .fondo {
   background: linear-gradient(
       to right,
@@ -31,12 +32,14 @@ body {
   background-repeat: no-repeat;
   position: relative;
 }
+/*
 .borroso {
   backdrop-filter: blur(
-    5px); /*efecto de esmerilado sobre un div, queda el efecto sobre la imagen de fondo*/
+    5px); 
   height: 100%;
   z-index: 2;
 }
+*/
 .colorNav {
   background-color: #47806159;
 }
@@ -91,10 +94,10 @@ h1 {
   font-size: 30px;
 }
 
+
 /* Seccion nosotros */
 .card {
-  color: #fff3f3bb;
-  background-color: #52796f42;
+  background-color: #2a3f3aa9;
 }
 
 .carousel-inner {
@@ -275,8 +278,8 @@ main .col-lg-6 {
 .imagen-cafe {
   width: 100%; /* Porcentaje del ancho del contenedor */
   height: auto; /* Altura automática para mantener la proporción */
-  max-width: 500px; 
-  max-height: 600px;
+  max-width: 250px; 
+  max-height: 350px;
 }
 .text-green {
   color: #508d50;
@@ -284,7 +287,7 @@ main .col-lg-6 {
 
 /*estilado pagina servicios*/
 .fondo-dos {
-  background-color: #0b1b0eb7;
+  background-color: #536050;
 }
 .servicio-img {
   max-width: 100%;
@@ -297,7 +300,8 @@ main .col-lg-6 {
 .contenido h4,
 .contenido p {
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    /*
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
 }
 .contenido{
     padding: 20px;    
@@ -459,7 +463,7 @@ li {
 /* Estilos para el texto en los párrafos */
 .section p {
   color: white; /* Cambiar el color del texto a blanco */
-  font-size: 24px; /* Tamaño de fuente */
+  font-size: 18px; /* Tamaño de fuente */
   text-align: justify; /* Alinear el texto justificado */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */
 }
@@ -467,7 +471,7 @@ li {
 /* Estilos para el título h5 */
 .card-title {
   color: white; /* Cambiar el color del texto a blanco */
-  font-size: 28px; /* Tamaño de la fuente */
+  font-size: 26px; /* Tamaño de la fuente */
   text-align: center; /* Alinear el texto al centro */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
 }
@@ -475,7 +479,7 @@ li {
 /* Estilos para el párrafo */
 .card-text {
   color: white; 
-  font-size: 24px; 
+  font-size: 16px; 
   text-align: justify;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
 }
