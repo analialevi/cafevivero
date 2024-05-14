@@ -252,6 +252,17 @@ main .col-lg-6 {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 
 }
+.giftcard-main{
+  background-color: #536050;
+}
+.img-gift-card{
+  max-width: 25%;
+  height: auto;
+}
+.giftcard-boton{
+  color: #49ac6a;
+  margin-top: 10px;
+}
 
 /*
 .linkNavFooter {
@@ -811,3 +822,4 @@ opacity: 1;
 .horario-lista {
     list-style: none;
 }
+
