@@ -47,82 +47,78 @@
                 </div>
             </nav>
         </header>
-    <main class="container" class="main">
-        <div class="contact-box">
-            <div class="left"></div>
-            <div class="right">
-                <h2 class="titulo-form">Dejanos tu consulta:</h2>
-                <form id="contactForm" action="" method="post">
-                    <input type="text" name="name" id="name" class="field" placeholder="Nombre" required>
-                    <input type="text" name="lastname" id="lastname" class="field" placeholder="Apellido" required>
-                    <input type="email" name="email" id="email" class="field" placeholder="Email" required>
-                    <input type="tel" name="subject" id="subject" class="field" placeholder="Celular" required>
-                    <select id="reason" name="reason" required>
-                        <option value="" disabled selected>Selecciona un motivo</option>
-                        <option value="Consulta">Consulta</option>
-                        <option value="Reclamo">Reclamo</option>
-                        <option value="Sugerencia">Sugerencia</option>
-                    </select>
-                    <textarea name="message" id="message" class="field" placeholder="Mensaje" required></textarea>
-                    <div id="emailHelp" class="form-text text-white">No guardaremos su mail para spam.</div>
-                    <input type="submit" value="Enviar" class="btn">
-                </form>
-
+        <main class="container">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2 class="titulo-form">Dejanos tu consulta:</h2>
+                    <form id="contactForm" action="formulario-de-contacto" method="post">
+                        <input type="text" name="name" id="name" class="field" placeholder="Nombre" required>
+                        <input type="text" name="lastname" id="lastname" class="field" placeholder="Apellido" required>
+                        <input type="email" name="email" id="email" class="field" placeholder="Email" required>
+                        <input type="tel" name="subject" id="subject" class="field" placeholder="Celular" required>
+                        <select id="reason" name="reason" required>
+                            <option value="" disabled selected>Selecciona un motivo</option>
+                            <option value="Consulta">Consulta</option>
+                            <option value="Reclamo">Reclamo</option>
+                            <option value="Sugerencia">Sugerencia</option>
+                        </select>
+                        <textarea name="message" id="message" class="field" placeholder="Mensaje" required></textarea>
+                        <div id="emailHelp" class="form-text text-white">No guardaremos su mail para spam.</div>
+                        <input type="submit" value="Enviar" class="btn">
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer-divs">
+        <div class="footer-horarios">
+            <h2 class="titulo-footer-final">Horarios:</h2>
+            <ul class="horario-lista">
+                <li class="horarios-dias">Lunes a Viernes: 9:00 am - 6:00 pm</li>
+                <li class="horarios-dias">Sábados: 10:00 am - 2:00 pm</li>
+                <li class="horarios-dias">Domingos: Cerrado</li>
+                <li>
+                    <a>
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="reserva-texto">1234-5678</span>
+                        <p class="text-white">Todos los derechos reservados 2024</p>
+                    </a>
+                </li>
+            </ul>
         </div>
-</main>
-<footer class="footer-divs">
-    <div class="footer-horarios">
-        <h2 class="titulo-footer-final">Horarios:</h2>
-        <ul class="horario-lista">
-            <li class="horarios-dias">Lunes a Viernes: 9:00 am - 6:00 pm</li>
-            <li class="horarios-dias">Sábados: 10:00 am - 2:00 pm</li>
-            <li class="horarios-dias">Domingos: Cerrado</li>
-            <li>
-                <a>
-                    <i class="fab fa-whatsapp"></i>
-                    <span class="reserva-texto">1234-5678</span>
-                    <p class="text-white">Todos los derechos reservados 2024</p>
-                </a>
-                
-            </li>
-        </ul>
-    </div>
-    <div class="footer-medio">
-        <h2 class="titulo-footer-final-2">Seguinos en nuestras redes:</h2>
-
-        <a class="linkNavFooter icono-con-fade" href="https://www.facebook.com/" target="_blank">
-            <i class="fab fa-facebook fa-fade"></i>
-            <span class="nombre-red">/GreenBrunch</span>
-        </a>
-        <a class="linkNavFooter icono-con-fade" href="https://www.instagram.com/" target="_blank">
-            <i class="fab fa-instagram fa-fade"></i>
-            <span class="nombre-red">@greenbrunch</span>
-        </a>
-        <a class="linkNavFooter icono-con-fade" href="https://www.youtube.com/" target="_blank">
-            <i class="fab fa-youtube fa-fade"></i>
-            <span class="nombre-red">@greenbrunch</span>
-        </a>
-        <a class="linkNavFooter icono-con-fade" href="https://www.tiktok.com/" target="_blank">
-            <i class="fab fa-tiktok fa-fade"></i>
-            <span class="nombre-red">greenbrunch</span>
-        </a>
-        
-        
-
-    </div>
-    <div class="footer-derecha">
-        <h2 class="titulo-footer-final">Mapa del sitio:</h2>
-        <ul class="mapa-lista">
-            <li class="mapaa-footer-guia"><a href="../index.html">Inicio</a></li>
-            <li class="mapaa-footer-guia"><a href="./nosotros.html">Nosotros</a></li>
-            <li class="mapaa-footer-guia"><a href="./servicios.html">Servicios</a></li>
-            <li class="mapaa-footer-guia"><a href="./curiosidades.html">Curiosidades</a></li>
-            <li class="mapaa-footer-guia"><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </div>
-
-</footer>
-<script src="../js/validacionFormulario.js"></script>
+        <div class="footer-medio">
+            <h2 class="titulo-footer-final-2">Seguinos en nuestras redes:</h2>
+    
+            <a class="linkNavFooter icono-con-fade" href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook fa-fade"></i>
+                <span class="nombre-red">/GreenBrunch</span>
+            </a>
+            <a class="linkNavFooter icono-con-fade" href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram fa-fade"></i>
+                <span class="nombre-red">@greenbrunch</span>
+            </a>
+            <a class="linkNavFooter icono-con-fade" href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube fa-fade"></i>
+                <span class="nombre-red">@greenbrunch</span>
+            </a>
+            <a class="linkNavFooter icono-con-fade" href="https://www.tiktok.com/" target="_blank">
+                <i class="fab fa-tiktok fa-fade"></i>
+                <span class="nombre-red">greenbrunch</span>
+            </a>
+        </div>
+        <div class="footer-derecha">
+            <h2 class="titulo-footer-final">Mapa del sitio:</h2>
+            <ul class="mapa-lista">
+                <li class="mapaa-footer-guia"><a href="../index.html">Inicio</a></li>
+                <li class="mapaa-footer-guia"><a href="./nosotros.html">Nosotros</a></li>
+                <li class="mapaa-footer-guia"><a href="./servicios.html">Servicios</a></li>
+                <li class="mapaa-footer-guia"><a href="./curiosidades.html">Curiosidades</a></li>
+                <li class="mapaa-footer-guia"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../js/validacionFormulario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-
 </html>

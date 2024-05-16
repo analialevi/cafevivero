@@ -242,6 +242,10 @@ main .col-lg-6 {
   color: #508d50;
 }
 
+.video-iframe {
+  width: 100%;
+}
+
 /*estilado pagina servicios*/
 .fondo-dos {
   background-color: #536050;
