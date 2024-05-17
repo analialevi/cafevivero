@@ -10,7 +10,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 .bordeiconocafe{
@@ -198,7 +198,7 @@ textarea {
 /* Termina estilos de contacto */
 
 @media screen and (max-width: 768px) {
-  .galeria {
+  .container {
     width: 100%;
     height: 80vh;
     display: flex;
@@ -207,9 +207,13 @@ textarea {
   .icon {
     font-size: 1.5rem;
   }
+  
   .piePagina {
     height: 3rem;
   }
+
+  
+  
   /* pagina contacto*/
 
   .contact-box {
@@ -262,21 +266,13 @@ main .col-lg-6 {
 }
 .img-gift-card{
   max-width: 25%;
-  height: auto;
+  margin-top: 20px;
 }
 .giftcard-boton{
   color: #49ac6a;
   margin-top: 10px;
 }
 
-/*
-.linkNavFooter {
-  width: 20px;
-  height: auto;
-  margin: 0 10px; 
-  animation: float 3s infinite; 
-}
-*/
 
 /*menu de cafeteria del servicio*/
 .h3-servicios{
@@ -284,13 +280,15 @@ main .col-lg-6 {
   margin-top: 10px;
 }
 .contenedor-servicios {
-  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
-  margin-bottom: 300px;}
+  padding: 100px;
+  margin-bottom: 150px;
+
+}
 
 /*
 .boton-regreso {
@@ -316,7 +314,7 @@ main .col-lg-6 {
   left: 50%;
   text-align: center;
   color:#ccc;
-  font-size: large;
+  font-size: small;
 }
 
 /*probando imagen con giro*/
@@ -364,9 +362,10 @@ main .col-lg-6 {
   color: white;
   transform: rotateY(180deg); /* Inicia girada hacia atrás */
   padding: 20px;
+  margin: 0;
 }
-.flip-card-back p{
-  font-size: small;
+.flip-card-back p {
+  font-size: 14px;
 }
 
 .flip-card img {
@@ -487,30 +486,6 @@ main .col-lg-6 {
   margin: 0 auto;
 }
 
-/* 
-
-.section {
-  color: white; 
-}
-
-
-
-.section h2 {
-  color: white; 
-  font-size: 28px; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-  text-align: center; 
-}
-
-
-.section p {
-  color: white; 
-  font-size: 18px; 
-  text-align: justify; 
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
-}
-
-*/
 .card-title {
   color: white; 
   font-size: 26px; 
@@ -527,7 +502,8 @@ main .col-lg-6 {
 }
 */
 .main {
-  margin-bottom: 50px;
+  margin-bottom: 250px;
+
 }
 .row {
   display: flex;
@@ -658,12 +634,14 @@ main .col-lg-6 {
   .footer-divs {
     background-color: #52796f;
     width: 100%;
-    height: 200px;
+    min-height: 250px;
     padding: 10px 0;
     text-align: center;
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
+    margin-bottom: 0;
+    justify-content: space-around;
+    position: relative;
 }
 
 .footer-horarios,
@@ -678,11 +656,16 @@ main .col-lg-6 {
     display: flex;
     flex-direction: column;
 }
+
+#seguinos {
+  margin-left: 100px;
+}
+
 .linkNavFooter {
     text-decoration: none;
     color: white;
     display: inline-block;
-    margin: 0 10px;
+    margin: 5px 10px;
     transition: transform 0.3s ease;
 }
 
@@ -812,15 +795,16 @@ opacity: 1;
 
 
 .final-debajo {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
-    background-color: black;
+    background-color: rgb(12, 12, 12);
 }
 
 .horarios-dias{
     margin-bottom: 5px;
+    margin-top: 12px;
     color: white;
 }
 
@@ -828,3 +812,111 @@ opacity: 1;
     list-style: none;
 }
 
+/* Media queries para dispositivos móviles */
+@media (max-width: 767px) {
+  .footer-divs {
+      height: 65%;
+      flex-direction: column;
+      position: absolute;
+  }
+
+  .footer-horarios {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    padding: 0 10px;
+}
+  .final-debajo {
+      margin-bottom: 0;
+  }
+
+.footer-medio{
+  width: 70%;
+  margin-right: 50px;
+  margin-bottom: 5px;
+}
+
+.linkNavFooter {
+  display: flex;
+  flex-direction: column;
+  margin-right: 190px;
+  white-space: nowrap;
+  margin-top: 5px;
+}
+
+
+#seguinos {
+  margin-left: 130px;
+}
+
+}
+
+/* Media queries para tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer-divs {
+      flex-direction: row;
+      height: 300px;
+      justify-content: space-between;
+      
+
+  }
+  .footer-horarios .footer-medio .footer-derecha{
+      flex-direction: row;
+  }
+
+  .footer-derecha{
+    margin-right: 0px;
+  }
+
+  .footer-horarios {
+      width: 100%;
+      height: 50%;
+
+  }
+  .horarios-dias {
+      text-align: left;
+      font-size: 12px;
+
+  }
+
+  .footer-medio{
+      width: 70%;
+  }
+
+#seguinos{
+  margin-right: 80px;
+}
+
+  .linkNavFooter {
+      display: flex;
+      flex-direction: row;
+      margin-right: 190px;
+      white-space: nowrap;
+      margin-top: 20px;
+      font-size: 12px;
+  }
+
+
+  .reserva-texto {
+      text-align: left;
+      font-size: 12px;
+      color:white;
+      white-space: nowrap;
+      margin-right: 1px;
+
+  }
+  .fab.fa-whatsapp {
+  font-size: 15px;
+  white-space: nowrap;
+  }
+
+  .final-debajo {
+      position: absolute;
+      background-color: #0a0a0a;
+  }
+
+  .mapaa-footer-guia {
+      font-size: 12px;
+      margin-top: 25px;
+  }
+}
