@@ -51,7 +51,7 @@
     <main class="main">
         <!-- Sección 1: Quiénes Somos -->
         <section class="seccion-quienes-somos">
-            <div class="col-md-2">
+            <div class="col-md-2" class="nosotros-div-imagen-1">
                 <div class="image-container-nosotros">
                     <img src="../assets/imagenes/imagen-nosotros-principal.jpg" alt="foto de plantas y el lugar" class="nosotros-imagen1">
                 </div>
@@ -60,7 +60,7 @@
                 <div class="card-de-nosotros">
                     <div class="card-body1">
                         <h5 class="card-title-nosotros1">Quiénes somos?</h5>
-                        <p class="card-text-nosotros">Somos <b>GREEN BRUNCH</b>, una empresa comprometida con el bienestar y el cuidado del medioambiente. Combinamos la pasión por el café y el buen gusto por las plantas para regalarte la mejor experiencia en la ciudad. Te invitamos a que puedas disfrutar un momento unico en nuestras instalaciones. Te damos la bienvenida!</p>
+                        <p class="card-text-nosotros" id="card-text-gb">Somos <b>GREEN BRUNCH</b>, una empresa comprometida con el bienestar y el cuidado del medioambiente. Combinamos la pasión por el café y el buen gusto por las plantas para regalarte la mejor experiencia en la ciudad. Te invitamos a que puedas disfrutar un momento unico en nuestras instalaciones. Te damos la bienvenida!</p>
                     </div>
                 </div>
             </div>
@@ -69,9 +69,9 @@
         <section class="seccion-vivero">
             <div class="col-md-8 mx-auto">
                 <div class="card-vivero">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center" id="primer-video-div">
                         <h2 class="card-title-nosotros">Nuestro Café en la naturaleza</h2>
-                        <iframe width="650" height="415" src="https://www.youtube.com/embed/TJzr5-XvO1Q?si=Ijj9mkuD909J1tfA&amp;start=56&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="650" height="415" src="https://www.youtube.com/embed/TJzr5-XvO1Q?si=Ijj9mkuD909J1tfA&amp;start=56&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="primer-video-cafe"></iframe>
 
                     </div>
                 </div>
@@ -81,9 +81,9 @@
         <section class="seccion-vivero">
             <div class="col-md-8 mx-auto">
                 <div class="card-vivero">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center" id="segundo-video-div">
                         <h2 class="card-title-nosotros">El Café y su historia</h2>
-                        <iframe width="650" height="415" src="https://www.youtube.com/embed/ZJtEDi0k964?si=zHq5uh5ljabSATpp&amp;start=3&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="650" height="415" src="https://www.youtube.com/embed/ZJtEDi0k964?si=zHq5uh5ljabSATpp&amp;start=3&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="segundo-video-cafe"></iframe >
                     </div>
                 </div>
             </div>
@@ -96,20 +96,20 @@
                         <h2 class="card-title-nosotros">Dónde podes encontrarnos</h2>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8098.124693245841!2d-64.16743487259752!3d-31.418478637399893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses!2sar!4v1711637461846!5m2!1ses!2sar"
                             width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            referrerpolicy="no-referrer-when-downgrade" id="mapa-para-resp"></iframe>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer-divs">
-        <div class="footer-horarios">
+    <footer class="footer-divs" id="footer-divs-resp">
+        <div class="footer-horarios" id="footer-horarios-resp">
             <h2 class="titulo-footer-final">Horarios:</h2>
             <ul class="horario-lista">
                 <li class="horarios-dias">Lunes a Viernes: 9:00 am - 6:00 pm</li>
                 <li class="horarios-dias">Sábados: 10:00 am - 2:00 pm</li>
                 <li class="horarios-dias">Domingos: Cerrado</li>
-                <li>
+                <li class="whatsapp-linea"    >
                     <a>
                         <i class="fab fa-whatsapp"></i>
                         <span class="reserva-texto">1234-5678</span>
@@ -118,7 +118,7 @@
                 </li>
             </ul>
         </div>
-        <div class="footer-medio">
+        <div class="footer-medio" id="footer-medio-resp">
             <h2 class="titulo-footer-final" id="seguinos">Seguinos en nuestras redes:</h2>
     
             <a class="linkNavFooter icono-con-fade" href="https://www.facebook.com/" target="_blank">
@@ -137,11 +137,9 @@
                 <i class="fab fa-tiktok fa-fade"></i>
                 <span class="nombre-red">greenbrunch</span>
             </a>
-            
-            
-    
+
         </div>
-        <div class="footer-derecha">
+        <div class="footer-derecha" id="footer-derecha-resp">
             <h2 class="titulo-footer-final">Mapa del sitio:</h2>
             <ul class="mapa-lista">
                 <li class="mapaa-footer-guia"><a href="../index.html">Inicio</a></li>

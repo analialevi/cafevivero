@@ -798,27 +798,29 @@ opacity: 1;
 }
 
 /* Media queries para dispositivos móviles */
-@media (max-width: 767px) {
+/* Seccion Index Mobile */
+@media (min-width:400px) and (max-width: 767px) {
   .footer-divs {
-      height: 65%;
+      height: 50%;
       flex-direction: column;
       position: absolute;
+      width: 95%;
+      margin-right: 20px;
   }
 
   .footer-horarios {
     margin: 0 auto;
     text-align: center;
-    width: 90%;
-    padding: 0 10px;
+    width: 95%;
 }
   .final-debajo {
       margin-bottom: 0;
   }
 
 .footer-medio{
-  width: 70%;
-  margin-right: 50px;
-  margin-bottom: 5px;
+  width: 95%;
+  margin-left: 10px;
+  margin-bottom: 25px;
 }
 
 .linkNavFooter {
@@ -829,19 +831,232 @@ opacity: 1;
   margin-top: 5px;
 }
 
-
 #seguinos {
-  margin-left: 130px;
+  margin-left: 20px;
+}
+
+.footer-derecha {
+  height: 95%;
+  width: 95%;
+  margin-left: 10px;
+}
+
+#horario-domingo{
+  margin-bottom: 10px;
+}
+
+#horarios-resp{
+  margin-left: 15px;
+}
+
+/* Seccion Nosotros Mobile */
+.seccion-quienes-somos {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-body1 {
+width: 70%;
+margin-right:auto;
+margin-bottom: 40px;
+}
+
+.card-de-nosotros {
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+
+#card-text-gb {
+  font-size: 11px;
+  margin-right: 10px;
+  width: 100px;
+  flex-direction: column;
+}
+
+.nosotros-imagen1 {
+  margin-left: auto;
+  margin-right: auto;
+  height: 365px;
+  margin-top: 5px;
+}
+
+#primer-video-div {
+  width: 100%;
+}
+
+#primer-video-cafe {
+  width: 340px;
+  height: 400px;
+
+}
+
+#segundo-video-div {
+  width: 100%;
+}
+
+#segundo-video-cafe {
+  width: 340px;
+  height: 400px;
+}
+
+#mapa-para-resp {
+  width: 340px;
+  height: 400px;
+}
+
+#footer-divs-resp{
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  align-items: center;
+  justify-self:center;
+}
+
+
+#footer-derecha-resp {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+/* Servicios version mobile */
+
+.contenedor-servicios {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 1000px;
+  margin-top: 10px;
+  margin-left: 30px;
+  align-items: center;
+  justify-self:center;
+}
+
+.flip-card {
+  width: 260px;
+margin-top: 10px;
+margin-bottom: 50px;
+
+}
+
+.img-container {
+  width: 100%;
+height: 230px;
+margin-bottom: 30px;
+}
+
+#servicios-imagen-1{
+  width: 250px;
+  height: 230px;
+}
+
+#servicios-imagen-2{
+  height: 230px;
+}
+
+#servicios-imagen-3{
+  height: 230px;
+}
+
+.flip-card-inner{
+  margin-right: 500px;
+  height: 300px;
+}
+
+.h3-servicios {
+  margin-bottom: 44px;
+}
+
+#final-debajo-servicios {
+  margin-left: 0px;
+}
+
+
+#footer-divs-resp3{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 750px;
+  /* align-items: center;
+  justify-self:center; */
+}
+
+#footer-derecha-resp3 {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+
+/* Seccion mobile Curiosidades */
+
+#titulo-curiosidades {
+  margin-top: 20px;
+}
+
+#video-1-curiosidades {
+  width: 100%;
+}
+
+#seccion-1-curiosidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tipos-de-cafe-img{
+  margin-top: 30px;
+}
+
+#curiosidades-titulo-principal {
+  margin-top: 15px;
+}
+
+
+#footer-divs-resp5{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 750px;
+  /* align-items: center;
+  justify-self:center; */
+}
+
+#footer-derecha-resp5 {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+
+/* Seccion Contacto para mobile */
+
+#footer-divs-resp4{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 750px;
+}
+
+#footer-derecha-resp4 {
+  height: 200px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+
 }
 
 }
 
 /* Media queries para tablet */
+/* Seccion index */
 @media (min-width: 768px) and (max-width: 1023px) {
   .footer-divs {
       flex-direction: row;
       height: 300px;
-      justify-content: space-between;
+      justify-content: space-evenly;
       
 
   }
@@ -856,6 +1071,7 @@ opacity: 1;
   .footer-horarios {
       width: 100%;
       height: 50%;
+     
 
   }
   .horarios-dias {
@@ -904,4 +1120,193 @@ opacity: 1;
       font-size: 12px;
       margin-top: 25px;
   }
+
+
+.whatsapp-linea {
+  margin-right: 20px;
+
 }
+
+.horario-lista {
+  margin-top: 20px;
+  height: 200px;
+
+}
+
+.mapaa-footer-guia {
+  margin-top: 22px;
+}
+
+
+
+/* Seccion Nosotros para tablet */
+
+.seccion-quienes-somos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .nosotros-div-imagen-1,
+    .imagen-quienes-somos {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .nosotros-div-imagen-1 .image-container-nosotros {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nosotros-imagen1 {
+      width: 300px;
+      margin-left: 60px;
+    }
+
+    .imagen-quienes-somos {
+        display: flex;
+        align-items: center;
+    }
+
+    .card-de-nosotros {
+        max-width: 50%;
+        margin-left: 250px;
+    }
+
+.seccion-vivero {
+  width: 100%;
+}
+
+.card-vivero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#primer-video-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 600px;
+}
+
+
+#segundo-video-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 600px;
+  /* background-color: red; */
+
+}
+
+
+#mapa-para-resp {
+  margin-bottom: 10px;
+}
+
+/*seccion tablet curiosidades*/
+
+#curiosidades-titulo-principal{
+  margin-top: 20px;
+}
+
+.video-iframe{
+  margin-top: 100px;
+}
+
+#texto-invitacion{
+  text-align: left;
+}
+
+.whatsapp-linea {
+  margin-right: 20px;
+
+}
+
+/*seccion tablet servicios*/
+
+.contenedor-servicios {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 2000px;
+  margin-left: 30px;
+  align-items: center;
+  justify-self:center;
+  justify-content: space-around;
+}
+
+.flip-card {
+  width: 360px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+}
+
+.img-container {
+  width: 100%;
+height: 230px;
+margin-bottom: 30px;
+}
+
+#servicios-imagen-1{
+  width: 550px;
+  height: 430px;
+}
+
+#servicios-imagen-2{
+  width: 550px;
+  height: 430px;
+}
+
+#servicios-imagen-3{
+  width: 550px;
+  height: 430px;
+}
+
+.flip-card-inner{
+  margin-right: 500px;
+  height: 300px;
+}
+
+.h3-servicios {
+  margin-bottom: 44px;
+}
+
+#final-debajo-servicios {
+  margin-left: 0px;
+}
+
+
+#footer-divs-resp3{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* align-items: center;
+  justify-self:center; */
+}
+
+#footer-derecha-resp3 {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.whatsapp-linea {
+  margin-right: 30px;
+
+}
+.horarios-dias {
+  margin-bottom: 15px;
+}
+
+
+}
+
