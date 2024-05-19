@@ -259,7 +259,7 @@ main .col-lg-6 {
   background-color: #536050;
 }
 .img-gift-card{
-  max-width: 25%;
+  max-width: 100%;
   margin-top: 20px;
 }
 .giftcard-boton{
@@ -991,6 +991,16 @@ margin-bottom: 30px;
   margin-bottom: 20px;
 }
 
+/*estilos para giftcard*/
+
+.img-gift-card{
+  height: 100%;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+ 
+}
+
 
 /* Seccion mobile Curiosidades */
 
@@ -1071,18 +1081,15 @@ margin-bottom: 30px;
   .footer-horarios {
       width: 100%;
       height: 50%;
-     
-
-  }
+}
   .horarios-dias {
       text-align: left;
       font-size: 12px;
-
-  }
+}
 
   .footer-medio{
       width: 70%;
-  }
+}
 
 #seguinos{
   margin-right: 80px;
@@ -1226,11 +1233,6 @@ margin-bottom: 30px;
   text-align: left;
 }
 
-.whatsapp-linea {
-  margin-right: 20px;
-
-}
-
 /*seccion tablet servicios*/
 
 .contenedor-servicios {
@@ -1300,13 +1302,27 @@ margin-bottom: 30px;
 }
 
 .whatsapp-linea {
-  margin-right: 30px;
+  margin-right: 20px;
 
 }
 .horarios-dias {
   margin-bottom: 15px;
 }
 
+.whatsapp-linea-servicios{
+margin-right: 35px;
+}
+
+/*estilos para giftcard Tablet*/
+
+.img-gift-card{
+  height: 100%;
+  width: 100%;
+ padding-left: 30px;
+ padding-right: 30px;
+ 
+}
 
 }
+
 
