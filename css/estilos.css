@@ -984,14 +984,96 @@ margin-bottom: 30px;
   margin-bottom: 20px;
 }
 
+/* Seccion menu para mobile */
+
+.menu-pagina-principal {
+  background-color: #536050;
+  }
+  .menu-cafeteria {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: 5px;
+    color:#634619;
+  }
+
+  .menu-cafeteria-columna {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 240px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .seccion-contendora-menu {
+    width: 95%;
+    height: 1650px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px solid #634619;
+    border-radius: 10px;
+    background-color:#fef8e8;
+  }
+
+  .seccion-menu-arriba, .seccion-menu-abajo, .seccion-menu-final {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    margin-top:50px;
+    margin-right: 280px;
+    margin-bottom:0px;
+    margin-left:0px;
+    background-color:#fef8e8;
+  }
+
+
+#bebidas-calientes-resp{
+  width: 90%;
+  margin-right: 40px;
+
+}
+#bebidas-frias-resp{
+  width: 90%;
+  margin-right: 40px;
+}
+
+#postres-div-resp{
+  margin-top: 230px;
+  width: 90%;
+  margin-right: 40px;
+}
+#sandwich-div-resp{
+  margin-top: 10px;
+  width: 90%;
+  margin-right: 40px;
+}
+#alfajores-div-resp{
+  margin-top: 480px;
+  width: 90%;
+  margin-right: 40px;
+}
+#smoothies-div-resp{
+  width: 90%;
+  margin-right: 40px;
+}
 /*estilos para giftcard*/
 
 .img-gift-card{
   height: 100%;
   width: 100%;
   padding-left: 30px;
-  padding-right: 30px;
- 
+  padding-right: 30px; 
 }
 
 
@@ -1311,11 +1393,66 @@ margin-right: 35px;
 .img-gift-card{
   height: 100%;
   width: 100%;
- padding-left: 30px;
- padding-right: 30px;
- 
+padding-left: 30px;
+padding-right: 30px;
 }
 
+/* Seccion menu para tablet */
+
+.menu-pagina-principal {
+  background-color: #536050;
+  overflow-y: hidden
+  }
+  .menu-cafeteria {
+    display: flex;
+    margin: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: 5px;
+    color:#634619;
+  }
+
+  .menu-cafeteria-columna {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 240px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .seccion-contendora-menu {
+    width: 95%;
+    height: 1000px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px solid #634619;
+    border-radius: 10px;
+    background-color:#fef8e8;
+  }
+
+  .seccion-menu-arriba, .seccion-menu-abajo, .seccion-menu-final {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    margin-top:50px;
+    margin-right: 280px;
+    margin-bottom:0px;
+    margin-left:0px;
+    background-color:#fef8e8;
+
+  }
+  .productos-bar{
+    margin-right: 30px;
+  }
 }
 
 
