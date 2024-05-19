@@ -950,18 +950,11 @@ height: 230px;
 margin-bottom: 30px;
 }
 
-#servicios-imagen-1{
-  width: 250px;
-  height: 230px;
-}
-
-#servicios-imagen-2{
-  height: 230px;
-}
-
-#servicios-imagen-3{
-  height: 230px;
-}
+#servicios-imagen-1,
+    #servicios-imagen-2,
+    #servicios-imagen-3 {
+        object-fit: cover;
+    }
 
 .flip-card-inner{
   margin-right: 500px;
