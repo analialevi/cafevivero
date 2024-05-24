@@ -33,22 +33,221 @@ body {
   position: relative;
 }
 
-.colorNav {
-  background-color: #47806159;
-}
-.nav-link {
-  font-size: 1.2rem;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
+/* Navbar estilos NUEVO*/
 
-.navbar-nav {
+.navbar {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color:#47806159;
+  color: white;
 }
-.galeria {
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item-accesos {
+  margin-left: 120px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.menu-hamburguesa {
+  display: none;
+}
+
+.container-principal-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.borde-icono-cafe {
+  border-radius: 50%;
+  width: 40px;
+  height: auto;
+}
+
+.icono-cafe-div {
+  display: flex;
+  align-items: center;
+}
+
+.menu-hamburguesa {
+  display: none;
+}
+
+/* footer Index */
+
+.footer {
   width: 100%;
+  padding:0;
 }
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #52796f;
+  /* background-color: #47806159; */
+  padding: 1rem 0;
+}
+
+.sectionFooter {
+  width: 270px;
+}
+
+#horarios-lista {
+  padding: 0;
+  margin-top: 0;
+  font-size: 15px;
+
+}
+
+.sectionFooter-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 10px;
+  color: white;
+  list-style: none;
+}
+
+.sitio-accesos-directo {
+  margin-top: 8px;
+}
+
+.info-mapa-de-sitio {
+  color: white;
+  font-style: italic;
+  padding:0;
+
+}
+.info-horarios-titulo{
+  color: white;
+  margin-top: 0%;
+  font-style: italic;
+  padding:5px;
+}
+.info-horarios {
+  color: white;
+  list-style: none;
+  margin-top: 10px;
+  font-style: italic;
+}
+.icono-con-fade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: 0;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.footer-bottom {
+  background-color: black;
+  padding: 1rem 1rem 1rem;
+}
+
+/* Informacion-redes */
+
+.informacion-redes {
+  color: white;
+  font-style: italic;
+  padding:0;
+}
+
+/* Iconos redes */
+.fab.fa-instagram {
+  color: white;
+  font-size: 24px;
+  margin-right: 2px;
+}
+
+.fab.fa-instagram {
+  opacity: 1;
+}
+
+.fab.fa-facebook {
+  color: white;
+  font-size: 25px;
+  margin-right: 2px;
+}
+
+.fab.fa-facebook.fa-fade {
+  opacity:1;
+}
+
+.fab.fa-whatsapp {
+  color:white;
+  font-size: 20px;
+  margin-right: 1px;
+
+}
+.fab.fa-youtube {
+  color: white;
+  font-size: 22px;
+  margin-right: 2px;
+}
+.fab.fab.fa-youtube{
+opacity: 1;
+}
+
+.fab.fa-tiktok {
+  color: white;
+  font-size: 22px;
+  margin-left: 0px;
+  margin-right: 5px;
+}
+.fab.fab.fab.fa-tiktok{
+opacity: 1;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-decoration: underline;
+  padding-top: 3rem;
+}
+
+.fab {
+  color: white;
+}
+
+.info-footer {
+  color: white;
+}
+/* -------------------- */
+
 header {
   background-color: #354f52a1;
 }
@@ -56,6 +255,7 @@ header {
 .titulo-principal-index {
   color: #49ac6a;
   font-family: monospace;
+  font-size: 34px;
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
@@ -77,177 +277,238 @@ header {
   to { width: 100%; }
 }
 
-/* Seccion nosotros */
-.card {
-  background-color: #2a3f3aa9;
+/* titulos */
+.titulo-principal-index{
+  color: rgba(151, 223, 118, 0.781);
+  margin-top: 20px;
+}
+.titulo-secundario-index{
+  color: white;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
-.carousel-inner {
-  height: 100%;
-}
-#carouselExampleIndicators {
+/* Carrusel */
+
+.carousel {
   position: relative;
-  z-index: 1;
-}
-.carousel-inner img {
-  width: auto;
-  height: 80vh;
-  object-fit: cover;
+  max-width: 90%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-/*estilado pagina de contacto*/
-.container {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.carousel-inner {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background: linear-gradient(
-      to right,
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.carousel-item img {
+  width: 80%;
+  height: 550px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 1;
+  border-radius: 50%;
+  width: 45px;
+}
+
+.prev {
+  left: 70px;
+}
+
+.next {
+  right: 70px;
+}
+
+/* Parrafo de card-body */
+
+.card-body-index {
+  width: 70%;
+  height: 145px;
+  margin-top: 30px;
+  margin-right:auto;
+  margin-bottom: 70px;
+  margin-left: auto;
+  background-color: rgba(0, 0, 0, 0.592);
+  padding: 10px;
+  border-radius: 5px;
+  }
+
+
+.texto-card-index {
+  color: white;
+  font-size: 18px;
+  text-align: justify;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-style: italic;
+
+}
+
+/* Seccion nosotros */
+
+.fondo-nosotros {
+  background-image: url("../assets/imagenes/fondo-nosotros2.jpg");
+  background: linear-gradient(to right,
       rgba(0, 0, 0, 0.642),
-      rgba(0, 0, 0, 0.642)
-    ),
-    url("../assets/imagenes/pexels-zumrad-normatova-11875719.jpg");
+      rgba(0, 0, 0, 0.642)),
+    url("../assets/imagenes/fondo-nosotros2.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 20px;
+  position: relative;
+  width: 100%;
+  background-color: #478061;
 }
 
-.contact-box {
-  max-width: 850px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.seccion-quienes-somos {
+  padding: 1rem;
+  /* background-color: red; */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 45%;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+
+}
+
+/* Primer imagen */
+.card-title-nosotros1 {
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   text-align: center;
-  background-color: #366855bd;
-  box-shadow: 0px 0px 19px 5px rgba(119, 138, 33, 0.19);
-}
-.left {
-  background: url("../assets/imagenes/pexels-ketut-subiyanto-4350205.jpg")
-    no-repeat center;
-  background-size: cover;
-  height: 100%;
-}
-.right {
-  padding: 25px 40px;
-}
-h2 {
-  position: relative;
-  padding: 0 0 10px;
+  margin-top: 0px;
   margin-bottom: 10px;
-  color: whitesmoke;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  margin-top: 0px;
 }
 
-.field {
+.card-text-nosotros {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: transparent;
+  color: white;
   width: 100%;
-  border: 2px solid #183d288f;
-  outline: none;
-  background-color: #fdffff;
-  padding: 0.5rem 1rem;
-  font-size: 1.1rem;
-  margin-bottom: 22px;
-  transition: all 0.3s ease-in-out;
+  height: 320px;
+  padding-top: 10px;
+  background-color: rgba(253, 253, 253, 0);
 }
 
-#emailHelp{
+.card-body1 {
+  height: 360px;
+  background-color: rgba(12, 0, 0, 0.497);
+  margin-left: 30px;
   margin-bottom: 10px;
 }
 
-textarea {
-  min-height: 150px;
-  resize: none;
-}
-.btn {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  background-color: #4bcc616c;
-  color: #0a0a0a;
-  font-size: 1.1rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-.btn:hover {
-  background-color: #42724a;
-}
-.field:focus {
-  border: 2px solid #078627;
-
-}
-.iconos-redes {
-  width: 25px;
-  height: 25px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+.nosotros-imagen1 {
+  height: 360px;
+  width: 250px;
 }
 
-#reason {
+/* Card 2 nuestro cafe - titulo */
+.card-title-nosotros {
+  font-size: 26px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+
+.card-de-nosotros {
+  margin-left: 20px;
+}
+
+/* seccion vivero */
+.seccion-vivero {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 0.25rem;
+}
+
+/* Seccion del mapa */
+.mapa {
   width: 100%;
-  height: 40px;
+}
+
+.mapa-container {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.mapa {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card-title {
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+
+.card-text {
+  color: white;
+  font-size: 16px;
+  text-align: justify;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.main-nosotros {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-  }
-  .icon {
-    font-size: 1.5rem;
-  }
-  
-  .piePagina {
-    height: 3rem;
-  }
+/* Servicios */
 
-  .contact-box {
-    grid-template-columns: 1fr;
-  }
-  .left {
-    background-size: cover;
-    height: 100%;
-  }
-  .right {
-    padding: 25px 20px;
-  }
-}
-/*estilado pagina curiosidades*/
-main.row {
-  display: flex;
-}
-
-main .col-lg-6 {
-  padding: 20px;
-  flex: 1; 
-}
-.imagen-cafe {
-  width: 100%; 
-  height: auto; 
-  max-width: 250px; 
-  max-height: 350px;
-}
-.text-green {
-  color: #508d50;
-}
-
-.video-iframe {
-  width: 100%;
-}
-
-/*estilado pagina servicios*/
 .fondo-dos {
   background-color: #536050;
 }
+
+#main-servicios #titulo-servcios {
+  color: white;
+  margin-top: 30px;
+  height: 10px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+
 .servicio-img {
   max-width: 100%;
   height: auto;
@@ -357,149 +618,7 @@ main .col-lg-6 {
   height: 100%;
 }
 
-/* La animación para hacer que los iconos floten */
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px); 
-  }
-  100% {
-    transform: translateY(0); 
-  }
-}
-/* seccion nosotros */
-.fondo-nosotros {
-  background-image: url("../assets/imagenes/fondo-nosotros2.jpg");
-  background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.642),
-      rgba(0, 0, 0, 0.642)
-  ),
-  url("../assets/imagenes/fondo-nosotros2.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.seccion-quienes-somos {
-  padding: 1rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  border-radius: 0.25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-.image-container-nosotros {
-  height: 100%;
-}
-.card-title-nosotros1 {
-  font-size: 24px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:white;
-  margin-top: 40px;
-}
-
-.card-title-nosotros {
-  font-size: 26px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:white;
-}
-
-.card-text-nosotros {
-  font-size: 18px;
-  text-align: center;
-  margin-top: 10px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: transparent;
-  color: white;
-}
-
-.card-body1{
-  height: 360px;
-  background-color: rgba(253, 253, 253, 0);
-  margin-left: 30px;
-}
-
-.card-de-nosotros {
-  margin-left: 20px;
-}
-
-.nosotros-imagen1 {
-  height: 360px;
-  width: 250px;
-}
-/* seccion vivero */
-
-.seccion-vivero{
-  margin-top: 1.5rem;
-  padding: 1rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  border-radius: 0.25rem;
-}
-
-
-/* Seccion del mapa */
-.mapa{
-  width: 100%;
-}
-
-.mapa-container {
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-.mapa {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.card-title {
-  color: white; 
-  font-size: 26px; 
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-}
-
-
-.card-text {
-  color: white; 
-  font-size: 16px; 
-  text-align: justify;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
-}
-*/
-.main {
-  margin-bottom: 250px;
-
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.col-lg-4 {
-  flex-basis: calc(33.33% - 10px); 
-  margin-bottom: 20px; 
-}
+/* Menu de seccion Servicios */
 
 /*seccion menu*/
 .menu-pagina-principal {
@@ -538,7 +657,6 @@ main .col-lg-6 {
     border-radius: 10px;
     background-color:#fef8e8;
   }
-  
   .seccion-menu-arriba, .seccion-menu-abajo, .seccion-menu-final {
     display: flex;
     flex-direction: row;
@@ -551,7 +669,6 @@ main .col-lg-6 {
     margin-left:60px;
     background-color:#fef8e8;
   }
-  
   .menu-titulo-principal {
     text-align: center;
     color:#634619;
@@ -559,7 +676,6 @@ main .col-lg-6 {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 30px;
   }
-  
   .bebidas-comida {
     text-align: center;
     font-family:fantasy;
@@ -567,23 +683,19 @@ main .col-lg-6 {
     font-size: large;
     color:#634619;
   }
-  
   .productos-bar {
     text-align: center;
   }
-  
   .productos-bar li {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
   .menu-cafeteria-boton {
     display: flex;
     justify-content: center;
     margin-top: 20px;
   }
-  
   .boton-regreso {
     padding: 10px 20px;
     cursor: pointer;
@@ -593,11 +705,9 @@ main .col-lg-6 {
     border-radius: 5px;
     margin-bottom: 30px;
   }
-  
   .boton-regreso:hover {
     background-color: #0056b3;
   }
-  
   .boton-descargar {
     padding: 10px 20px;
     cursor: pointer;
@@ -608,851 +718,770 @@ main .col-lg-6 {
     margin-bottom: 30px;
     margin-left: 10px;
   }
-  
   .boton-descargar:hover {
     background-color: #0056b3;
     color:#fff;
   }
 
-  /*estilos para el footer*/
 
-  .footer-divs {
-    background-color: #52796f;
-    width: 100%;
-    min-height: 250px;
-    padding: 10px 0;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 0;
-    justify-content: space-around;
-    position: relative;
-}
-
-.footer-horarios,
-.footer-medio,
-.footer-derecha {
-    color: white;
-    width: 100%;
-}
-
-
-.footer-medio {
-    display: flex;
-    flex-direction: column;
-}
-
-#seguinos {
-  margin-left: 100px;
-}
-
-.linkNavFooter {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    margin: 5px 10px;
-    transition: transform 0.3s ease;
-}
-
-/* iconos redes */
-.linkNavFooter .fab.fa-instagram {
-    color: #bc2a8d;
-    font-size: 24px;
-}
-
-.linkNavFooter .fab.fa-facebook {
-    color: white;
-    font-size: 25px;
-}
-
-.linkNavFooter .fab.fa-facebook.fa-fade {
-    opacity:1;
-}
-
-.linkNavFooter .fab.fa-instagram {
-    color: white;
-    font-size: 25px;
-}
-
-.linkNavFooter .fab.fa-instagram {
-    opacity: 1;
-}
-
-.fab.fa-whatsapp {
-    color:white;
-    font-size: 20px;
-
-}
-.linkNavFooter .fab.fa-youtube {
-    color: white;
-    font-size: 22px;
-}
-.linkNavFooter .fab.fab.fa-youtube{
-opacity: 1;
-}
-
-.linkNavFooter .fab.fa-tiktok {
-    color: white;
-    font-size: 22px;
-    margin-left: 7px;
-}
-.linkNavFooter .fab.fab.fab.fa-tiktok{
-opacity: 1;
-}
-
-
-
-.mapa-lista {
-    list-style-type: none;
-    padding: 0;
-}
-
-.mapa-lista li a {
-    color: white;
-    text-decoration: none;
-}
-
-.mapa-lista li a:hover {
-    color: white;
-}
-
-
-.titulo-footer-final {
-    font-size: 15px;
-    text-decoration: underline;
-}
-
-.titulo-footer-final-2 {
-  font-size: 15px;
-  text-decoration: underline;
-  margin-left: 110px;
-}
-.icono-con-fade {
-    display: inline-block;
-
-  }
-.icono-con-fade i {
-    color: #000;
-    font-size: 24px;
-    opacity: 0.5;
-    transition: opacity 0.3s ease; /
-}
-
-.icono-con-fade i:hover {
-    opacity: 1;
-}
-
-
-.linkNavFooter {
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: 5px;
-    margin-left: 200px;
-}
-
-.nombre-red {
-    margin-left: 5px;
-    color: white;
-    transition: color 0.3s;
-}
-
-.nombre-red:hover,
-.nombre-red:active,
-.nombre-red:visited {
-    color: white;
-}
-
-
-.reserva-texto {
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    color: white;
-}
-
-.linkNavFooter {
-    display: inline-flex;
-    margin-bottom:5px;
-}
-
-.linkNavFooter i {
-    margin-left: 5px;
-}
-
-
-.final-debajo {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: rgb(12, 12, 12);
-}
-
-.horarios-dias{
-    margin-bottom: 5px;
-    margin-top: 12px;
-    color: white;
-}
-
-.horario-lista {
-    list-style: none;
-}
-
-/* Media queries para dispositivos móviles */
-/* Seccion Index Mobile */
-@media (min-width:400px) and (max-width: 767px) {
-  .footer-divs {
-      height: 50%;
-      flex-direction: column;
-      position: absolute;
-      width: 95%;
-      margin-right: 20px;
-  }
-
-  .footer-horarios {
-    margin: 0 auto;
-    text-align: center;
-    width: 95%;
-}
-  .final-debajo {
-      margin-bottom: 0;
-  }
-
-.footer-medio{
-  width: 95%;
-  margin-left: 10px;
-  margin-bottom: 25px;
-}
-
-.linkNavFooter {
+/*Seccion Curiosidades*/
+.main-curiosidades-todo {
   display: flex;
-  flex-direction: column;
-  margin-right: 190px;
-  white-space: nowrap;
-  margin-top: 5px;
+  flex-direction:column;
+
+
 }
 
-#seguinos {
-  margin-left: 20px;
-}
+.main-curiosidades{
+  padding: 20px;
 
-.footer-derecha {
-  height: 95%;
-  width: 95%;
-  margin-left: 10px;
 }
-
-#horario-domingo{
-  margin-bottom: 10px;
-}
-
-#horarios-resp{
-  margin-left: 15px;
-}
-
-/* Seccion Nosotros Mobile */
-.seccion-quienes-somos {
+.imagen-cafe {
   width: 100%;
-  height: 450px;
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  height: auto;
+  max-width: 250px;
+  max-height: 350px;
 }
 
-.card-body1 {
-width: 70%;
-margin-right:auto;
-margin-bottom: 40px;
+.video-iframe {
+  width: 100%;
 }
 
-.card-de-nosotros {
-width: 100%;
+#video-1-curiosidades {
+  width: 500px;
+}
+
+.titulo-principal-curiosidades{
+  color: white;
+  margin-top: 30px;
+  height: 10px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.seccion-curiosidades-video {
+  margin-top: 70px;
+}
+
+.texto-curiosidades-1 {
+  width: 100%;
+  height: 600px;
+}
+
+.contenedor-video-texto {
+display:flex;
+flex-direction: row;
+width:1200px;
 margin-left: auto;
 margin-right: auto;
 }
 
-#card-text-gb {
-  font-size: 11px;
-  margin-right: 10px;
-  width: 100px;
-  flex-direction: column;
-}
-
-.nosotros-imagen1 {
-  margin-left: auto;
-  margin-right: auto;
-  height: 365px;
-  margin-top: 5px;
-}
-
-#primer-video-div {
-  width: 100%;
-}
-
-#primer-video-cafe {
-  width: 340px;
-  height: 400px;
-
-}
-
-#segundo-video-div {
-  width: 100%;
-}
-
-#segundo-video-cafe {
-  width: 340px;
-  height: 400px;
-}
-
-#mapa-para-resp {
-  width: 340px;
-  height: 400px;
-}
-
-#footer-divs-resp{
-  display: flex;
-  flex-direction: column;
-  height: 800px;
-  align-items: center;
-  justify-self:center;
-}
-
-
-#footer-derecha-resp {
-  height: 200px;
-  margin-bottom: 20px;
-}
-
-/* Servicios version mobile */
-
-.contenedor-servicios {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  height: 1000px;
-  margin-top: 10px;
+.video-iframe-curiosidades {
+  width: 700px;
+  height: 500px;
   margin-left: 30px;
-  align-items: center;
-  justify-self:center;
-}
-
-.flip-card {
-  width: 260px;
-margin-top: 10px;
-margin-bottom: 50px;
-
-}
-
-.img-container {
-  width: 100%;
-height: 230px;
-margin-bottom: 30px;
-}
-
-#servicios-imagen-1,
-    #servicios-imagen-2,
-    #servicios-imagen-3 {
-        object-fit: cover;
-    }
-
-.flip-card-inner{
-  margin-right: 500px;
-  height: 300px;
-}
-
-.h3-servicios {
-  margin-bottom: 44px;
-}
-
-#final-debajo-servicios {
-  margin-left: 0px;
-}
-
-
-#footer-divs-resp3{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 750px;
-  /* align-items: center;
-  justify-self:center; */
-}
-
-#footer-derecha-resp3 {
-  height: 200px;
-  margin-bottom: 20px;
-}
-
-/* Seccion menu para mobile */
-
-.menu-pagina-principal {
-  background-color: #536050;
-  }
-  .menu-cafeteria {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-  }
-
-  ul {
-    list-style-type: none;
-  }
-
-  li {
-    margin-bottom: 5px;
-    color:#634619;
-  }
-
-  .menu-cafeteria-columna {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 240px;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 13px;
-  }
-
-  .seccion-contendora-menu {
-    width: 95%;
-    height: 1650px;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 20px solid #634619;
-    border-radius: 10px;
-    background-color:#fef8e8;
-  }
-
-  .seccion-menu-arriba, .seccion-menu-abajo, .seccion-menu-final {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
-    margin-top:50px;
-    margin-right: 280px;
-    margin-bottom:0px;
-    margin-left:0px;
-    background-color:#fef8e8;
-  }
-
-
-#bebidas-calientes-resp{
-  width: 90%;
-  margin-right: 40px;
-
-}
-#bebidas-frias-resp{
-  width: 90%;
-  margin-right: 40px;
-}
-
-#postres-div-resp{
-  margin-top: 230px;
-  width: 90%;
-  margin-right: 40px;
-}
-#sandwich-div-resp{
-  margin-top: 10px;
-  width: 90%;
-  margin-right: 40px;
-}
-#alfajores-div-resp{
-  margin-top: 480px;
-  width: 90%;
-  margin-right: 40px;
-}
-#smoothies-div-resp{
-  width: 90%;
-  margin-right: 40px;
-}
-/*estilos para giftcard*/
-
-.img-gift-card{
-  height: 100%;
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px; 
-}
-
-
-/* Seccion mobile Curiosidades */
-
-#titulo-curiosidades {
-  margin-top: 20px;
-}
-
-#video-1-curiosidades {
-  width: 100%;
-}
-
-#seccion-1-curiosidades {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#tipos-de-cafe-img{
-  margin-top: 30px;
-}
-
-#curiosidades-titulo-principal {
-  margin-top: 15px;
-}
-
-
-#footer-divs-resp5{
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  height: 750px;
-  /* align-items: center;
-  justify-self:center; */
-}
-
-#footer-derecha-resp5 {
-  height: 200px;
-  margin-bottom: 20px;
-}
-
-
-/* Seccion Contacto para mobile */
-
-#footer-divs-resp4{
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  height: 750px;
-}
-
-#footer-derecha-resp4 {
-  height: 200px;
-  margin-bottom: 20px;
-  margin-right: 30px;
-
-}
-
-}
-
-/* Media queries para tablet */
-/* Seccion index */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .footer-divs {
-      flex-direction: row;
-      height: 300px;
-      justify-content: space-evenly;
-      
-
-  }
-  .footer-horarios .footer-medio .footer-derecha{
-      flex-direction: row;
-  }
-
-  .footer-derecha{
-    margin-right: 0px;
-  }
-
-  .footer-horarios {
-      width: 100%;
-      height: 50%;
-}
-  .horarios-dias {
-      text-align: left;
-      font-size: 12px;
-}
-
-  .footer-medio{
-      width: 70%;
-}
-
-#seguinos{
   margin-right: 80px;
 }
 
-  .linkNavFooter {
-      display: flex;
-      flex-direction: row;
-      margin-right: 190px;
-      white-space: nowrap;
-      margin-top: 20px;
-      font-size: 12px;
-  }
+.invitado-titulo {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
 
+.texto-costado-video{
+  width: 400px;
+  margin-left: 250px;
+  background-color: rgba(0, 6, 8, 0.477);
+  border-radius: 10px;
+}
 
-  .reserva-texto {
-      text-align: left;
-      font-size: 12px;
-      color:white;
-      white-space: nowrap;
-      margin-right: 1px;
+.invitado-texto {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
 
-  }
-  .fab.fa-whatsapp {
-  font-size: 15px;
-  white-space: nowrap;
-  }
+.texto-curiosidades-2 {
+  height: 600px;
+}
 
-  .final-debajo {
-      position: absolute;
-      background-color: #0a0a0a;
-  }
+.tipos-de-cafe {
+color: white;
+text-decoration: underline;
+margin-bottom: 30px;
+text-transform: uppercase;
+}
 
-  .mapaa-footer-guia {
-      font-size: 12px;
-      margin-top: 25px;
-  }
+.contenedor-texto-imagen2 {
+display:flex;
+flex-direction: row;
+width:1200px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 110px;
+}
 
-
-.whatsapp-linea {
-  margin-right: 20px;
+.div-text-cafe2{
+  color: white;
+  width: 700px;
+  margin-top: 10px;
+  margin-left: 50px;
+  background-color: rgba(0, 6, 8, 0.477);
+  border-radius: 10px;
 
 }
 
-.horario-lista {
-  margin-top: 20px;
-  height: 200px;
-
+.imagen-curiosidades-taza {
+  width: 450px;
+  height: 470px;
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-right: 30px;
+  border-radius: 60%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
 }
 
-.mapaa-footer-guia {
-  margin-top: 22px;
+.imagen-curiosidades-taza:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
+.tipos-cafe-texto-2 {
+  font-size: 24px;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 50px;
+}
 
-
-/* Seccion Nosotros para tablet */
-
-.seccion-quienes-somos {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-top: 20px;
-    }
-
-    .nosotros-div-imagen-1,
-    .imagen-quienes-somos {
-        flex: 1;
-        margin: 10px;
-    }
-
-    .nosotros-div-imagen-1 .image-container-nosotros {
-        display: flex;
-        justify-content: center;
-    }
-
-    .nosotros-imagen1 {
-      width: 300px;
-      margin-left: 60px;
-    }
-
-    .imagen-quienes-somos {
-        display: flex;
-        align-items: center;
-    }
-
-    .card-de-nosotros {
-        max-width: 50%;
-        margin-left: 250px;
-    }
-
-.seccion-vivero {
+/*estilado pagina de contacto*/
+.container {
+  position: relative;
   width: 100%;
-}
-
-.card-vivero {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.642),
+      rgba(0, 0, 0, 0.642)
+    ),
+    url("../assets/imagenes/pexels-zumrad-normatova-11875719.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#primer-video-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  width: 700px;
-  height: 600px;
-}
-
-
-#segundo-video-div {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 700px;
-  height: 600px;
-  /* background-color: red; */
-
+  text-align: center;
+  background-color: #366855bd;
+  box-shadow: 0px 0px 19px 5px rgba(119, 138, 33, 0.19);
+}
+.left {
+  background: url("../assets/imagenes/pexels-ketut-subiyanto-4350205.jpg")
+    no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+.right {
+  padding: 25px 40px;
+}
+h2 {
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+  color: whitesmoke;
 }
 
+.field {
+  width: 100%;
+  border: 2px solid #183d288f;
+  outline: none;
+  background-color: #fdffff;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: all 0.3s ease-in-out;
+}
 
-#mapa-para-resp {
+#emailHelp{
   margin-bottom: 10px;
 }
 
-/*seccion tablet curiosidades*/
+textarea {
+  min-height: 150px;
+  resize: none;
+}
+.btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #4bcc616c;
+  color: #0a0a0a;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: #42724a;
+}
+.field:focus {
+  border: 2px solid #078627;
 
-#curiosidades-titulo-principal{
+}
+.iconos-redes {
+  width: 25px;
+  height: 25px;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.video-iframe{
-  margin-top: 100px;
-}
-
-#texto-invitacion{
-  text-align: left;
-}
-
-/*seccion tablet servicios*/
-
-.contenedor-servicios {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  height: 2000px;
-  margin-left: 30px;
-  align-items: center;
-  justify-self:center;
-  justify-content: space-around;
-}
-
-.flip-card {
-  width: 360px;
-  margin-top: 10px;
-  margin-bottom: 50px;
-
-}
-
-.img-container {
+#reason {
   width: 100%;
-height: 230px;
-margin-bottom: 30px;
-}
-
-#servicios-imagen-1{
-  width: 550px;
-  height: 430px;
-}
-
-#servicios-imagen-2{
-  width: 550px;
-  height: 430px;
-}
-
-#servicios-imagen-3{
-  width: 550px;
-  height: 430px;
-}
-
-.flip-card-inner{
-  margin-right: 500px;
-  height: 300px;
-}
-
-.h3-servicios {
-  margin-bottom: 44px;
-}
-
-#final-debajo-servicios {
-  margin-left: 0px;
-}
-
-
-#footer-divs-resp3{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  /* align-items: center;
-  justify-self:center; */
-}
-
-#footer-derecha-resp3 {
-  height: 200px;
+  height: 40px;
   margin-bottom: 20px;
 }
-
-.whatsapp-linea {
-  margin-right: 20px;
-
+.nav-link:hover {
+  color: inherit; /* Esto heredará el color del texto del padre */
+  background-color: transparent; 
 }
-.horarios-dias {
-  margin-bottom: 15px;
-}
+/* Media queries para dispositivos móviles */
 
-.whatsapp-linea-servicios{
-margin-right: 35px;
-}
+/* Media query */
 
-/*estilos para giftcard Tablet*/
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 576px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #478061;
+    /* background-color: #52796f; */
+    padding: 10px 0;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    z-index: 1;
 
-.img-gift-card{
-  height: 100%;
-  width: 100%;
-padding-left: 30px;
-padding-right: 30px;
-}
-
-/* Seccion menu para tablet */
-
-.menu-pagina-principal {
-  background-color: #536050;
-  overflow-y: hidden
   }
-  .menu-cafeteria {
+
+  .nav-links.active {
     display: flex;
-    margin: 20px;
   }
 
-  ul {
-    list-style-type: none;
+  .nav-links li {
+    margin: 10px 0;
   }
 
-  li {
-    margin-bottom: 5px;
-    color:#634619;
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
   }
 
-  .menu-cafeteria-columna {
+  .nav-links li a:hover {
+    color: #ffc107;
+  }
+
+  .menu-hamburguesa {
+    display: block;
+    cursor: pointer;
+    margin-left: 150px;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .menu-hamburguesa:hover .bar {
+    background-color: #ffc107;
+  }
+
+  /* Ajuste de posición del menú desplegable */
+  .navbar {
+    position: relative;
+  }
+
+  .nav-links {
+    top: calc(100% + 0px);
+  }
+
+  .sectionFooter {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  /* Carrusel */
+
+  .carousel {
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .carousel-item img {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    z-index: 1;
+    border-radius: 50%;
+    width: 45px;
+  }
+
+  .prev {
+    left: 0px;
+  }
+
+  .next {
+    right: 0px;
+  }
+
+  /* Parrafo card */
+  .card-body-index {
+    width: 60%;
+    height: 120px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: 250px;
+    margin-left: auto;
+    background-color: rgba(0, 0, 0, 0.592);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .texto-card-index {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+  }
+
+  .sectionFooter {
+    margin-bottom: 30px;
+  }
+
+  /* Seccion Nosotros - mobile */
+  .seccion-quienes-somos {
+    padding: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 0.25rem;
     display: flex;
     flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 100%;
-    height: 240px;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 13px;
-  }
-
-  .seccion-contendora-menu {
-    width: 95%;
-    height: 1000px;
-    margin-top: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    border: 20px solid #634619;
-    border-radius: 10px;
-    background-color:#fef8e8;
   }
 
-  .seccion-menu-arriba, .seccion-menu-abajo, .seccion-menu-final {
+  /* Primer imagen - titulo  */
+  .card-title-nosotros1 {
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+  }
+
+  /* texto principal de nosotros  */
+  .card-text-nosotros {
+    font-size: 23px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    color: white;
+    width: 350px;
+    height: 320px;
+    padding-top: 10px;
+    background-color: rgba(253, 253, 253, 0);
+  }
+
+  .card-body1 {
+    height: auto;
+    background-color: rgba(12, 0, 0, 0.497);
+    margin-top: 10px;
+    margin-bottom: 0px;
+    /* background-color: #478061; */
+    width: 360px;
+  }
+
+  .nosotros-imagen1 {
+    height: 430px;
+    width: 100%;
+  }
+
+  /* Card 2 nuestro cafe - titulo */
+  .card-title-nosotros {
+    font-size: 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .card-de-nosotros {
+    margin-left: 20px;
+  }
+
+  #primer-video-cafe {
+    width: 360px;
+    height: 300px;
+  }
+
+  #segundo-video-cafe {
+    width: 360px;
+    height: 300px;
+    margin-top: 10px;
+  }
+
+  #donde-encontrarnos {
+    font-size: 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    width: 100%;
+
+  }
+
+  /* Seccion del mapa */
+  .mapa {
+    width: 430px;
+    height: 300px;
+    margin-bottom: 70px;
+  }
+
+  #mapa-para-resp {
+    width: 400px;
+    height: 300px;
+  }
+
+  .card-title {
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+  }
+
+  .card-text {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+    #container-nav-resp {
+      width: 100%;
+    }
+
+    #footer-para-nosotros{
+      margin-top: 50px;
+      width: 100%;
+      margin-left: 10px;
+      width: 100%;
+    }
+
+    .seccion-vivero{
+      width: 100%;
+      display: flex;
+      margin-left: 30px;
+    }
+
+    #footer-bottom-nosotros {
+      width: 100%;
+      margin-left: 10px;
+    }
+
+
+    #menu-hamburguesa-nosotros{
+      margin-left: 300px;
+    }
+
+    .main-nosotros {
+      width: 100%;
+    }
+}
+
+
+
+
+/* Estilos para tablet */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0px;
+    height: 100px;
+  }
+
+  .nav-links {
+    list-style: none;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 200px;
-    margin-top:50px;
-    margin-right: 280px;
-    margin-bottom:0px;
-    margin-left:0px;
-    background-color:#fef8e8;
-
+    height: 80px;
   }
-  .productos-bar{
-    margin-right: 30px;
+
+  .nav-item-accesos {
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 0px;
   }
-}
 
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    white-space: nowrap;
+  }
 
+  .nav-link:hover {
+    color: #ffc107;
+  }
+
+  .carousel {
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 450px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    z-index: 1;
+    border-radius: 50%;
+    width: 45px;
+  }
+
+  .prev {
+    left: 0px;
+  }
+
+  .next {
+    right: 5px;
+  }
+
+  .card-body-index {
+    width: 90%;
+    height: 250px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(0, 0, 0, 0.592);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  .texto-card-index {
+    color: white;
+    font-size: 23px;
+    text-align: justify;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+
+  #horarios-lista {
+    width: 33%;
+    color: white;
+    margin-top: 0px;
+    font-style: italic;
+    padding: 0;
+  }
+
+  #seguinos-redes {
+    width: 30%;
+    margin-top: 10px;
+  }
+
+  #div-mapa-sitio {
+    width: 30%;
+    margin-top: 10px;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  /* Quienes somos version tablet */
+  .seccion-quienes-somos {
+    padding: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 130px;
+  }
+
+  /* Primer imagen - titulo  */
+  .card-title-nosotros1 {
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+  }
+
+  /* texto principal de nosotros  */
+  .card-text-nosotros {
+    font-size: 23px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    color: white;
+    width: 300px;
+    height: 320px;
+    padding-top: 10px;
+    background-color: rgba(253, 253, 253, 0);
+  }
+
+  .card-body1 {
+    height: 360px;
+    background-color: rgba(12, 0, 0, 0.497);
+    margin-top: 10px;
+    margin-right: 150px;
+    margin-bottom: 0px;
+  }
+
+  .nosotros-imagen1 {
+    height: 360px;
+    width: 250px;
+  }
+
+  #donde-encontrarnos {
+    font-size: 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    width: 100%;
+  }
+
+  /* Seccion del mapa */
+  .card-title {
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+  }
+
+  .card-text {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+#container-nav-resp {
+      width: 900px;}
+    }

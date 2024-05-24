@@ -5,150 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GREEN BRUNCH - coffee garden</title>
     <link rel="shortcut icon" href="./cafe.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-5QqHyFWNbK4w9V9O29/LCAzKu8LR">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="container-fluid fondo"  >
     <div>
-    <header class="sticky-top">
-        <div class="borroso">
-        </div>
-        <nav class="navbar slide navbar-expand-lg navbar-light colorNav text-white">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./assets/imagenes/iconocafe.png" alt="logo cafe"  class="bordeiconocafe">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav justifi-content-between  ">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+        <header class="sticky-top">
+            <nav class="navbar">
+                <div class="container-principal-nav">
+                    <div class="logo">
+                        <a href="index.html" class="icono-cafe-div">
+                            <img src="./assets/imagenes/iconocafe.png" alt="logo cafe" class="borde-icono-cafe">
+                        </a>
+                    </div>
+                    <ul class="nav-links">
+                        <li class="nav-item-accesos">
+                            <a class="nav-link" href="index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="./pages/nosotros.html">Nosotros</a>
+                        <li class="nav-item-accesos">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="./pages/servicios.html">Servicios</a>
+                        <li class="nav-item-accesos">
+                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="./pages/curiosidades.html">Curiosidades</a>
+                        <li class="nav-item-accesos">
+                            <a class="nav-link" href="./pages/curiosidades.html">Curiosidades</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="./pages/contacto.html">Contacto</a>
+                        <li class="nav-item-accesos">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
-    
+                    <div class="menu-hamburguesa">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
     <main class="main">
         <div>
             <div>
                 <h1 class="titulo-principal-index" >GREEN BRUNCH</h1>
-                <h2 class="text-white">Bienvenidos al lugar donde la naturaleza y el café se encuentran</h2>
+                <h2 class="titulo-secundario-index">Bienvenidos al lugar donde <br> la naturaleza y el café se encuentran</h2>
             </div>
         </div>
-    
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/imagenes/carrousel1.jpg" class="d-block w-100" alt="Foto Carrusel 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/imagenes/carrousel2.jpg" class="d-block w-100" alt="Foto Carrusel 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/imagenes/carrousel3.jpg" class="d-block w-100" alt="Foto Carrusel 3">
-                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/imagenes/12.jpg" class="imagen-carrusel" alt="Foto Carrusel 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/imagenes/13.jpeg" class="imagen-carrusel" alt="Foto Carrusel 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/imagenes/14.jpg" class="imagen-carrusel" alt="Foto Carrusel 3">
+                    </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <button class="prev" onclick="prevSlide()">❮</button>
+            <button class="next" onclick="nextSlide()">❯</button>
         </div>
-    
-        <div class="card col-9 mx-auto mt-4 ">
-            <div class="card-body">
-                <p class="card-text">
-                    Sumérgete en una experiencia única donde el <b>aroma del café fresco</b> se entrelaza con la <b>frescura de la
-                        naturaleza</b>. En nuestro <b>CAFE VIVERO</b> , te invitamos a explorar un mundo donde cada taza es un <b>viaje
-                        sensorial</b> y cada planta es una <b>historia de vida</b>.
-                    Descubre la <b>magia</b> de nuestro espacio, donde la <b>pasión por el café,</b> se fusiona con el <b>amor por
-                        las plantas</b>. Disfruta de una <b>experiencia única de degustación</b>, donde cada sorbo es una oportunidad
-                    para conectar con la <b>esencia misma de la naturaleza</b>.
-                </p>
-            </div>
-    
         </div>
     </main>
-    <footer class="footer-divs">
-        <div class="footer-horarios">
-            <h2 class="titulo-footer-final" id="horarios-resp">Horarios:</h2>
-            <ul class="horario-lista">
-                <li class="horarios-dias">Lunes a Viernes: 9:00 am - 6:00 pm</li>
-                <li class="horarios-dias">Sábados: 10:00 am - 2:00 pm</li>
-                <li class="horarios-dias" id="horario-domingo">Domingos: Cerrado</li>
-                <li class="whatsapp-linea">
-                    <a>
-                        <i class="fab fa-whatsapp"></i>
-                        <span class="reserva-texto">1234-5678</span>
+    <div>
+        <div class="card-body-index">
+            <p class="texto-card-index">
+                Sumérgete en una experiencia única donde el <b>aroma del café fresco</b> se entrelaza con la <b>frescura de la
+                    naturaleza</b>. En nuestro <b>CAFE VIVERO</b> , te invitamos a explorar un mundo donde cada taza es un <b>viaje
+                    sensorial</b> y cada planta es una <b>historia de vida</b>.
+                Descubre la <b>magia</b> de nuestro espacio, donde la <b>pasión por el café,</b> se fusiona con el <b>amor por
+                    las plantas</b>. Disfruta de una <b>experiencia única de degustación</b>, donde cada sorbo es una oportunidad
+                para conectar con la <b>esencia misma de la naturaleza</b>.
+            </p>
+        </div>
+    </div>
+</main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="sectionFooter" id="horarios-lista">
+                <h2 class="info-horarios-titulo">Horarios:</h2>
+                <ul class="sectionFooter-list">
+                    <li class="info-horarios">Lunes a Viernes: 9:00 am - 6:00 pm</li>
+                    <li class="info-horarios">Sábados: 10:00 am - 2:00 pm</li>
+                    <li class="info-horarios">Domingos: Cerrado</li>
+                    <li class="info-horarios">
+                        <a>
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="info-horarios">1234-5678</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sectionFooter" id="seguinos-redes">
+                <h2 class="informacion-redes">Seguinos en nuestras redes:</h2>
+                <div class="sectionFooter-list">
+                    <a class="icono-con-fade" href="https://www.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook fa-fade"></i>
+                        <span>/GreenBrunch</span>
                     </a>
-                    
-                </li>
-            </ul>
+                    <a class="icono-con-fade" href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram fa-fade white-text"></i>
+                        <span>@greenbrunch</span>
+                    </a>
+                    <a class="icono-con-fade" href="https://www.youtube.com/" target="_blank">
+                        <i class="fab fa-youtube fa-fade white-text"></i>
+                        <span>@greenbrunch</span>
+                    </a>
+                    <a class="icono-con-fade" href="https://www.tiktok.com/" target="_blank">
+                        <i class="fab fa-tiktok fa-fade white-text"></i>
+                        <span>@greenbrunch</span>
+                    </a>
+                </div>
+            </div>
+            <div class="sectionFooter" id="div-mapa-sitio">
+                <h2 class="info-mapa-de-sitio">Mapa del sitio:</h2>
+                <ul class="sectionFooter-list">
+                    <li class="sitio-accesos-directo"><a href="./index.html">Inicio</a></li>
+                    <li class="sitio-accesos-directo"><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li class="sitio-accesos-directo"><a href="./pages/servicios.html">Servicios</a></li>
+                    <li class="sitio-accesos-directo"><a href="./pages/curiosidades.html">Curiosidades</a></li>
+                    <li class="sitio-accesos-directo"><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-medio">
-            <h2 class="titulo-footer-final" id="seguinos">Seguinos en nuestras redes:</h2>
-    
-            <a class="linkNavFooter icono-con-fade" href="https://www.facebook.com/" target="_blank">
-                <i class="fab fa-facebook fa-fade"></i>
-                <span class="nombre-red">/GreenBrunch</span>
-            </a>
-            <a class="linkNavFooter icono-con-fade" href="https://www.instagram.com/" target="_blank">
-                <i class="fab fa-instagram fa-fade"></i>
-                <span class="nombre-red">@greenbrunch</span>
-            </a>
-            <a class="linkNavFooter icono-con-fade" href="https://www.youtube.com/" target="_blank">
-                <i class="fab fa-youtube fa-fade"></i>
-                <span class="nombre-red">@greenbrunch</span>
-            </a>
-            <a class="linkNavFooter icono-con-fade" href="https://www.tiktok.com/" target="_blank">
-                <i class="fab fa-tiktok fa-fade"></i>
-                <span class="nombre-red">greenbrunch</span>
-            </a>
-            
-            
-    
-        </div>
-        <div class="footer-derecha">
-            <h2 class="titulo-footer-final">Mapa del sitio:</h2>
-            <ul class="mapa-lista">
-                <li class="mapaa-footer-guia"><a href="./index.html">Inicio</a></li>
-                <li class="mapaa-footer-guia"><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li class="mapaa-footer-guia"><a href="./pages/servicios.html">Servicios</a></li>
-                <li class="mapaa-footer-guia"><a href="./pages/curiosidades.html">Curiosidades</a></li>
-                <li class="mapaa-footer-guia"><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="final-debajo">
-            <p class="text-white">Todos los derechos reservados 2024</p>
+        <div class="footer-bottom">
+            <p class="info-footer">Todos los derechos reservados 2024</p>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </div>
+<script src="./js/script.js"></script> 
 </body>
 </html>
