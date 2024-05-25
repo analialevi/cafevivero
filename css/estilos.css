@@ -1089,10 +1089,10 @@ textarea {
   /* Parrafo card */
   .card-body-index {
     width: 60%;
-    height: 120px;
+    height: 100%;
     margin-top: 30px;
     margin-right: auto;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
     margin-left: auto;
     background-color: rgba(0, 0, 0, 0.592);
     padding: 10px;
