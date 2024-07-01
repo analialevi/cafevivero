@@ -1,3 +1,4 @@
+//formulario de validacion//
 async function submitForm(event) {
     event.preventDefault();
     
