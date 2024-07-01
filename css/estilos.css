@@ -1092,7 +1092,7 @@ textarea {
     height: 100%;
     margin-top: 30px;
     margin-right: auto;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     margin-left: auto;
     background-color: rgba(0, 0, 0, 0.592);
     padding: 10px;
@@ -2171,5 +2171,115 @@ text-transform: uppercase;
   width: auto;
 }
 
+}
 
+/* decoracion para admin y login*/
+
+.container-login {
+  background-color: #536050;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  margin-top: 20px; 
+  margin-bottom: 20px;
+  justify-content: center;
+}
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.login-form{
+  display: flex;
+  align-items: center;
+}
+.container-login-principal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.btn-login,
+.nav-home {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.btn-login {
+  background-color: #42724a;
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: #42724a;
+}
+
+.nav-home {
+  background-color: #808080;
+  color: white;
+  text-decoration: none; /* Para quitar el subrayado predeterminado de los enlaces */
+}
+
+.nav-home:hover {
+  background-color: #6e6e6e;
+}
+.fondo-tres{
+  background-color: #659c78;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-admin{
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-admin{
+  padding: 8px 16px;
+  border: none;
+  background-color: #42724a;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.btn-admin:hover{
+  background-color: #42724a;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+#noContacts {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
 }
