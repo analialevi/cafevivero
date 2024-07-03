@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     async function loadContacts() {
         try {
-            const response = await fetch("http://cafevivero.pythonanywhere.com/api/contacts");
+            const response = await fetch("https://cafevivero.pythonanywhere.com/api/contacts");
             if (!response.ok) {
                 throw new Error("Error al obtener los mensajes");
             }
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         button.disabled = true;
 
         try {
-            const response = await fetch(`http://cafevivero.pythonanywhere.com/api/contacts/${contactId}`, {
+            const response = await fetch(`https://cafevivero.pythonanywhere.com/api/contacts/${contactId}`, {
                 method: "DELETE",
             });
             if (!response.ok) {
@@ -74,12 +74,11 @@ document.addEventListener("DOMContentLoaded", async function () {
             button.disabled = false;
         }
     }
-
-    const logout = () => {
-        console.log("Saliendo...");
-        localStorage.removeItem("auth");
-        window.location.href = "./../index.html";
-    };
-
     loadContacts();
 });
+
+const logout = () => {
+    console.log("Saliendo...");
+    localStorage.removeItem("auth");
+    window.location.href = "./login.html";
+};

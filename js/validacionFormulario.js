@@ -12,7 +12,7 @@ async function submitForm(event) {
     };
     
     try {
-        const response = await fetch('http://cafevivero.pythonanywhere.com/api/contacts', {
+        const response = await fetch('https://cafevivero.pythonanywhere.com/api/contacts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
